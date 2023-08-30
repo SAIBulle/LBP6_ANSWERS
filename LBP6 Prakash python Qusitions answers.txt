@@ -1,0 +1,8871 @@
+https://www.hackerrank.com/lbp6222
+https://www.hackerrank.com/contests/41dec30av2022/challenges
+
+https://www.hackerrank.com/contests/matrixtest/challenges/lbp207
+
+
+https://www.jdoodle.com/
+https://www.jdoodle.com/c-online-compiler/
+https://www.jdoodle.com/online-compiler-c++/
+https://www.jdoodle.com/online-java-compiler/
+https://www.jdoodle.com/python3-programming-online/
+
+
+Very Good Evening....
+
+welcome to durgasoft online training
+
+welcome to logic based programming batch
+
+K Prakash Babu, Technical Trainer 13 year of exp
+
+LBP6 @7.30PM
+
+course --------------> Logic Based Programming LBP6
+timings -------------> @7.30pm (mon-fri)
+duration ------------> 3 months (Feb|Mar|Apr 2022)
+programs ------------> 350 programs
+fees ----------------> Rs. 1500/-
+contact -------------> 8096 969696
+
+Benifits 
+
+1) Running Notes 
+2) Video recordings 7 months (view)
+3) Free workshops on java and python
+4) hackerrank link  (life time validity)
+
+Daily Activity in LBP
+----------------------
+1) Read and Understand the problem statement.
+2) Logic to solve the problem.
+3) Implementing the program in C language.
+4) Implementing the program in Java Programming language.
+5) Implementing the program in Python programming language.
+6) Run and verify compile time errors.
+7) we can submit the program for test cases.
+8) final submission (public and private test cases)1 point. (300+/350).
+
+
+
+input and output statements in various programming languages:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. C
+2. C++
+3. Java
+4. Python
+
+output statements:
+------------------
+C 
+	printf() 
+	%d int
+	%f float
+	%lf double
+	%c char
+	%s char[]
+
+C++
+	cout<<
+Java
+	System.out.print() 
+	System.out.println() 
+	System.out.printf()
+python
+	10 forms of print() statement
+
+Ex:
+
+#include<stdio.h>
+int main()
+{
+    printf("welcome to c lang.");
+    return 1;
+}
+
+Ex:
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Welcome to C++ Programming";
+    return 1;
+}
+
+Ex:
+public class Prakash
+{
+    public static void main(String[] args)
+    {
+        System.out.println("welcome to Java");
+    }
+}
+
+Ex:
+print("Hello Python")
+
+
+
+input statements:
+-----------------
+C:
+	scanf()
+	%d
+	%c
+	%f
+	%s
+
+C++:
+	cin>>
+
+python:
+	input() ---------> string
+	int(input()) ----> int
+	float(input()) --> float
+
+Java:
+	1. BufferedReader ----> java.io -----> char and String
+	2. Console -----------> java.io -----> String and Password
+	3. Scanner -----------> java.util ---> all types of data types
+
+obj.next() ----------> read next obj
+obj.nextByte() ------> read byte value
+obj.nextShort() -----> read short value
+obj.nextInt() -------> read int value
+obj.nextLong() ------> read long value
+obj.nextFloat() -----> read float value
+obj.nextDouble() ----> read double value
+obj.nextBoolean() ---> read boolean value
+obj.nextLine() ------> read String value
+
+Note: There is no direct method to read a character value, indirectly we can use String concept.
+
+Ex:
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d %d",&a,&b);
+    c=a+b;
+    printf("%d",c);
+    return 1;
+}
+
+Ex:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b;
+    c=a+b;
+    cout<<c;
+    return 1;
+}
+
+Ex:
+import java.util.*;
+public class Prakash
+{
+    public static void main(String[] args)
+    {
+        Scanner obj = new Scanner(System.in);
+        int a,b,c;
+        a = obj.nextInt();
+        b = obj.nextInt();
+        c = a+b;
+        System.out.println(c);
+    }
+}
+
+Ex:
+a=int(input())
+b=int(input())
+c=a+b
+print(c)
+
+COUT<<
+5<<1
+
+>> ----> extraction operator(read data)
+<< ----> insertion operator(write data)
+
+LBP1
+
+Program to check whether the given number is even or odd number
+
+input-----> an integer number n
+contraint-> n>=0
+output----> even or odd or invalid
+
+python implementation:
+----------------------
+n=int(input())
+if n>=0:
+    if n%2==0:
+        print("even")
+    else:
+        print("odd")
+else:
+    print("invalid")
+
+
+
+LBP2
+Given an integer n, perform the following conditional actions,
+if n is odd, print weird,
+if n is even and in the inclusive range of 2 to 5, print Not Weird.
+if n is even and in the inclusive range of 6 to 20, print Weird.
+if n is even and greater than 20, print Not Weird.
+
+input-----> a number from the user
+contraint-> 1<=n<=100
+output----> Weird or Not Weird
+
+python implementation:
+----------------------
+n=int(input())
+if n%2!=0:
+    print("Weird")
+else:
+    if n>=2 and n<=5:
+        print("Not Weird")
+    elif n>=6 and n<=20:
+        print("Weird")
+    else:
+        print("Not Weird")
+
+LBP3
+To check whether the given year is leap year or not.
+
+input------> year from the user
+constraint-> no constraint
+output-----> leap year or not leap year
+
+if(y%4==0) then it is leap year else not leap year
+
+if (year%4==0 and year%100!=0) or (year%400==0) the leap year
+else not leap year
+
+python implementation:
+----------------------
+1st version:
+------------
+y=int(input())
+if (y%4==0 and y%100!=0) or (y%400==0):
+    print("True")
+else:
+    print("False")
+
+2nd version:
+------------
+import calendar
+print(calendar.isleap(int(input())))
+
+LBP4
+
+The e-commerce company Bookshelf wishes to analyse its monthly sales data between minimum range 30 to max range 100. The company has categorized these book sales into four groups depending on the number of sales with the help of these groups the company will know which stock they should increase or decrease in their inventory for the next month. the groups are as follows
+
+sales range		groups
+30-50 ------------------> D
+51-60 ------------------> C
+61-80 ------------------> B
+81-100 -----------------> A
+
+write an alg to find the group for the given book sale count.
+
+input--------> an integer salesCount represent total sales of a book
+output-------> a character representing the group of given sale count
+constraint---> 30<=saleCount<=100
+
+logic:
+
+if n>=30 and n<=100{
+
+	if n>=30 and n<=50 ----------> D
+	else if n>=51 and n<=60 -----> C
+	else if n>=61 and n<=80 -----> B
+	else ------------------------> A
+
+python implementation:
+----------------------
+n=int(input())
+if n>=30 and n<=100:
+    if n>=30 and n<=50:
+        print("D")
+    elif n>=51 and n<=60:
+        print("C")
+    elif n>=61 and n<=80:
+        print("B")
+    else:
+        print("A")
+else:
+    print("invalid")
+
+
+LBP5
+
+Return the Next Number from the Integer Passed
+
+implement a program that takes a number as an argument, increments the number by +1 and returns the result
+
+input ----------> a number from the user
+constraints-----> no constraints
+output ---------> an incremented value
+
+read n
+print n+1
+
+python implementation:
+----------------------
+There is no increment and decrement operators in python
+
+n=int(input())
+n=n+1 #n+=1
+print(n)
+
+LBP6
+
+Free Coffee Cups
+
+For each of the 6 coffee cups I buy, I get a 7th cup free. In total, I get 7 cups. 
+Implement a program that takes n cups bought and print as an integer the total number of cups I would get.
+
+input -------------> n number of cups from user
+constraints -------> n>0
+output ------------> number of cups present have
+
+Buy 2 Get 1 Free ====> 
+
+1 ----> 1
+2 ----> 2+1
+3 ----> 3+1
+4 ----> 4+2
+n ----> n+n/2
+
+
+Buy 6 Cups 1 Free =====> n+n/6
+
+python implementation:
+----------------------
+n=int(input())
+print(n+n//6)
+
+LBP7
+
+Extract Digits from the number
+
+Implement a program to extract digits from the given number
+
+input -------------> a number from the user
+constraint --------> n>0
+output ------------> print digits in line sep by space
+
+python implementation:
+----------------------
+n=int(input())
+while n!=0:
+    d=n%10
+    print(d,end=' ')
+    n=n//10
+
+LBP8
+
+Sum of Digits 
+
+Implement a program to calculate sum of digits present in the given number
+
+input -------------> a number from the user
+constraint --------> n>0
+output ------------> print sum of digits
+
+extracting digits from the given number
+
+while(n!=0)
+{
+	d=n%10;
+	print d
+	n=n/10;
+}
+
+sum of all digits present in the given number
+
+s=0;
+while(n!=0)
+{
+	d=n%10;
+	s=s+d;
+	n=n/10;
+}
+print s
+
+python implementation:
+----------------------
+n=int(input())
+s=0
+while n!=0:
+    d=n%10
+    s=s+d
+    n=n//10
+print(s)
+
+LBP9
+
+Sum of even Digits 
+
+Implement a program to calculate sum of even digits present in the given number
+
+input -------------> a number from the user
+constraint --------> n>0
+output ------------> print sum of even digits
+
+digit d
+
+logic:
+
+d%2==0
+
+python implementation:
+----------------------
+n=int(input())
+s=0
+while n!=0:
+    d=n%10
+    if d%2==0:
+		s=s+d
+    n=n//10
+print(s)
+
+LBP10
+
+Sum of odd Digits 
+
+Implement a program to calculate sum of odd digits present in the given number
+
+input -------------> a number from the user
+constraint --------> n>0
+output ------------> print sum of odd digits
+
+digit d
+
+logic:
+
+d%2!=0
+
+python implementation:
+----------------------
+n=int(input())
+s=0
+while n!=0:
+    d=n%10
+    if d%2!=0:
+		s=s+d
+    n=n//10
+print(s)
+
+
+LBP11
+
+Sum of prime Digits 
+
+Implement a program to calculate sum of prime digits present in the given number
+
+input -------------> a number from the user
+constraint --------> n>0
+output ------------> print sum of prime digits
+
+logic
+
+s=0;
+while(n!=0)
+{
+    d=n%10;
+    if(d==2 or d==3 or d==5 or d==7){
+	s=s+d;
+    }
+    n=n/10;
+}
+print(s)
+
+
+0-9---> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+   ---> 2, 3, 5, 7
+
+python implementation:
+----------------------
+n=int(input())
+s=0
+while n!=0:
+    d=n%10
+    if d==2 or d==3 or d==5 or d==7:
+        s=s+d
+    n=n//10
+print(s)
+
+LBP12
+
+Sum of Digits  divisible by 3
+
+Implement a program to calculate sum of digits that are divisible by 3 in the given number
+
+input -------------> a number from the user
+constraint --------> n>0
+output ------------> print sum of digits that are divisible by 3
+
+0-9 ----> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    ----> 3, 6, 9
+
+logic:
+
+s=0
+while(n!=0)
+{
+    d=n%10;
+    if(d%3==0)
+       s=s+d;
+    n=n/10;
+}
+print s
+
+s=0
+while(n!=0)
+{
+    d=n%10;
+    if(d==3 or d==6 or d==9)
+       s=s+d;
+    n=n/10;
+}
+print s
+
+python implementation:
+----------------------
+1st version:
+------------
+n=int(input())
+s=0
+while n!=0:
+    d=n%10
+    if d%3==0:
+        s=s+d
+    n=n//10
+print(s)
+
+2nd version:
+------------
+print(sum([int(i) for i in input() if i in '369']))
+
+'1234456' ---> '1','2','3','4','4','5','6' --->
+
+3 or 6 or 9 ---> in '369'
+
+'x' in '369'
+
+LBP13
+
+Number of digits
+
+Implement a program to calculate number of digits in the given number
+
+input -------------> a number from the user
+constraint --------> n>0
+output ------------> print number of digits in the number
+
+logic:
+
+count=0;
+while(n!=0)
+{
+    count++;
+    n=n/10;
+}
+print(count)
+
+123 ----> 3
+45678---> 5
+
+python implementation:
+----------------------
+print(len(input()))
+
+
+LBP14
+
+Reverse Integer
+
+Given an integer x, return x with its digits reversed. 
+
+input---------> a number from user
+constraint ---> n>=0
+output -------> reverse of the given number
+
+
+logic:
+
+r=0
+while(n!=0)
+{
+	d=n%10;
+	r=r*10+d;
+	n=n/10;
+}
+print r
+
+python implementation:
+----------------------
+s=input()
+print(s[::-1])
+
+LBP15
+
+Duck Number
+
+Program to read a number and check whether it is duck number or not.
+Hint: A duck number is a number which has zeros present in it, but no zero present in the begining of the number.
+
+input-------> a number from the user
+contraint --> n>=0
+output------> Yes or No
+
+logic
+
+flag=0
+while(n!=0)
+{
+	d=n%10;
+	if(d==0)
+	{
+		flag=1;
+		break;
+	}
+	n=n/10
+}
+if flag==1 print Yes else No
+
+
+python implementation:
+----------------------
+print("Yes" if "0" in input() else "No")
+
+LBP16
+
+Number of Occurrences
+
+Program to find number of occurences of the given digit in the number n
+
+input ------> two numbers n and d
+constraints-> no constraints
+output -----> number of occurrences
+
+logic
+
+read n and key
+c=0
+while(n!=0)
+{
+     if(n%10==key)
+	c++
+     n=n/10;
+}
+print c
+
+
+python implementation:
+----------------------
+print(input().count(input()))
+
+
+LBP17
+
+Paliandrome Number
+
+Program to check whether the given number is paliandrome or not
+
+input -----> a number from the user
+constraint-> n>0
+output ----> Yes or No
+
+logic
+
+temp=n
+r=0
+while(n!=0)
+{
+	d=n%10;
+	r=r*10+d;
+	n=n/10;
+}
+if temp==r print Yes else No
+
+python implementation:
+----------------------
+s=input()
+print("Yes" if s==s[::-1] else "No")
+
+LBP18
+Check Birth Day
+
+Lisa always forgets her birthday which is on th 5th July. 
+So develop a function/method which will be helpful to remember her birthday.
+
+The function/method checkBirthday return an integer 1, if it is her birthday else return 0. 
+the function/method checkBirthday accepts two arguments.
+Month, a string representing the month of her birth and 
+day, an integer representing the data of her birthday.
+
+input -----------> month & day 
+constraints -----> no
+output ----------> 1 or 0
+
+logic:
+
+read day
+read month
+if month=="july" and day==5 then print 1 else 0
+
+python implementation:
+----------------------
+month=input()
+day=int(input())
+if month=="july" and day==5:
+    print(1)
+else:
+    print(0)
+
+LBP19
+
+Decimal to Binary
+
+A network protocol specifies how data is exchanged via transmission media. 
+The protocol converts each message into a stream of 1's and 0's. 
+Given a decimal number, write an algorithm to convert the number into a binary form.
+
+input ---------> a number
+constraint ----> n>=0
+output --------> binary number
+
+
+logic:
+
+array a
+read n
+i=0
+while n!=0
+{
+	a[i++]=n%2;
+	n=n/2;
+}
+for(i=i-1;i>=0;i--) print a[i]
+
+python implementation:
+----------------------
+n=int(input())
+print(str(bin(n))[2:])
+
+LBP20
+Lucky Customer
+
+An e-commerce website wishes to find the lucky customer who will be eligible for full value cash back. 
+For this purpose,a number N is fed to the system. 
+It will return another number that is calculated by an algorithm. 
+In the algorithm, a seuence is generated, in which each number n the sum of the preceding numbers. 
+initially the sequence will have two 1's in it. 
+The System will return the Nth number from the generated sequence which is treated as the order ID. 
+The lucky customer will be one who has placed that order. 
+Write an alorithm to help the website find the lucky customer.
+
+input --------> a number
+constraint ---> n>0
+output -------> a number
+
+
+logic:
+
+int fib(int n){
+	if(n==0 || n==1)
+		return n;
+	else
+		return fib(n-1)+fib(n-2);
+}
+
+
+python implementation:
+----------------------
+def fib(n):
+    if n==0 or n==1:
+        return n
+    else:
+        return fib(n-1)+fib(n-2)
+n=int(input())
+print(fib(n))
+
+
+LBP21
+
+Christmas offer
+
+An e-commerce company plans to give their customers a special discount for the Christmas, 
+they are planning to offer a flat discount. 
+The discount value is calculated as the sum of all prime digits in the total bill amount.
+
+Write an algorithm to find the discount value for the given total bill amount.
+
+input ----> the input consists of an integer order value representing the total bill amount
+condition-> no conditions
+output ---> print an integer representing discount value for the given total bill amount.
+
+logic:
+
+sum of prime digits program
+
+python implementation:
+----------------------
+n=int(input())
+s=0
+while n!=0:
+    d=n%10
+    if d==2 or d==3 or d==5 or d==7:
+        s=s+d
+    n=n//10
+print(s)
+
+LBP22
+Niven Number
+
+Write a program to accept a number and check and display whether it is a Niven Number or not.
+Niven Number is that a number which is divisible by its sum of digits.
+
+input -----> a number
+constraint-> n>0
+output ----> Niven Number or Not
+
+logic:
+
+sum=0;
+temp=n;
+while(n!=0)
+{
+   sum=sum+(n%10);
+   n=n/10;
+}
+if(temp%sum==0) then print Yes else No
+
+python implementation:
+----------------------
+n=int(input())
+s=0
+temp=n
+while n!=0:
+    d=n%10
+    s=s+d
+    n=n//10
+print("Yes" if temp%s==0 else "No")
+
+
+LBP23
+
+A Special two digit number
+
+A special two digit number is a number such that when the sum of its digits is added to the product of its digits, the result should be equal to the original two-digit number.
+
+Implement a program to accept a two digit number and check whether it is a special two digit number or not.
+
+input -----> a two digit number
+constraint-> 10<=n<=99
+output ----> special two digit number or not
+
+logic:
+
+read n
+formula = sum of digits + product of digits
+a=n%10;
+b=(n/10)%10;
+c=(a+b)+(a*b)
+if c==n then Yes else No
+
+python implementation:
+----------------------
+n=int(input())
+a=n%10
+b=(n//10)%10
+c=(a+b)+(a*b)
+print("Yes" if n==c else "No")
+
+LBP24
+Sum of even numbers
+
+Implement a program to find sum of even number between x and y both are inclusive.
+
+input -----> two int values
+constraint-> no
+output ----> sum of even numbers between x and y
+
+
+logic
+
+sum=0
+for(i=n1;i<=n2;i++){
+	if(i%2==0){
+		sum=sum+i;
+	}
+}
+print sum
+
+python implementation:
+----------------------
+n1=int(input())
+n2=int(input())
+sum=0
+for i in range(n1,n2+1):
+    if i%2==0:
+        sum=sum+i
+print(sum)
+
+
+LBP25
+Celsius to Fahrenheit
+
+Create a function/method to convert celsius to fahrenheit.
+
+input ------> celsius
+constrint --> no
+output -----> Fahrenheit
+
+formula:
+
+F = (C*9/5) + 32
+
+
+python implementation:
+----------------------
+c=int(input())
+f=(c*9//5)+32
+print(f)
+
+
+
+LBP26
+
+Fahrenheit to Celsius
+
+Program to convert fahrenheit to celsius.
+
+input -------> fahrenheit
+constraint --> no
+output ------> celsius
+
+formula:
+
+C = (F-32)*5/9
+
+
+python implementation:
+----------------------
+f=int(input())
+c=(f-32)*5//9
+print(c)
+
+LBP27
+Find The Sequence Sum
+
+Given three integers i,j&k, a sequence sum to be the value of 
+i+(i+1)+(i+2)..+j+(j-1)+(j-2)+..+k
+
+1st way: i+(i+1)+(i+2)..+j and (j-1)+(j-2)+..+k ===> we have taken
+2nd way: i+(i+1)+(i+2).. and j+(j-1)+(j-2)+..+k
+
+
+(increment from i until it equals to j, then decrement from j until equals k). Given values i,j,k. 
+caluclate the sequence sum as described.
+
+int getSequenceSum(int,int,int);
+
+input -------> Three int values
+constraints--> no
+output ------> sum basd on given constraints
+
+
+logic
+
+sum=0
+while(i<=j){sum=sum+(i++);}
+while(j!=k){sum=sum+(--j);}
+print sum
+
+
+python implementation:
+----------------------
+i=int(input())
+j=int(input())
+k=int(input())
+sum=0
+while i<=j:
+    sum=sum+i
+    i=i+1
+while j!=k:
+    j=j-1
+    sum=sum+j
+print(sum)
+
+
+
+
+LBP28
+You are climbing a stair case. 
+It takes n steps to reach to the top.
+
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+Note: Given n will be a positive integer.
+
+input --------> a number from the user
+constriants --> no
+output -------> number of ways
+
+logic:
+
+int fib(int n){
+	if(n==1||n==0)
+		return 1;
+	else
+		return fib(n-1)+fib(n-2);
+}
+
+fib(1) =====> 1
+fib(2) =====> 2
+fib(3) =====> 3
+.
+.
+.
+
+sir, by observing the result we can only conclude that it's following Fibonacci sequence
+
+
+python implementation:
+----------------------
+def fib(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return fib(n-1)+fib(n-2)
+n=int(input())
+print(fib(n))
+
+LBP29
+
+Prime Number or Not
+
+Write a program to check whether the given number is prime number or not. 
+A number is said to prime if it is having only two factors. i.e. 1 and number itself.
+
+input ------> a number from the use
+constraint--> n>1
+output -----> true or false
+
+11 ----> 1 and 11
+13 ----> 1 and 13
+17 ----> 1 and 17
+
+logic
+
+factors=0;
+for(i=1;i<=n;i++){
+   if(n%i==0)
+      factors++;
+}
+if factors==2 then print "true" else "false"
+
+python implementation:
+----------------------
+n=int(input())
+factors=0
+for i in range(1,n+1):
+    if n%i==0:
+        factors=factors+1
+print("true" if factors==2 else "false")
+
+
+
+LBP30
+
+Valid Palindrome
+
+Given a string, determine if it is a Palindrome string or not. 
+A String is Palindrome if it is equal to reverse of the original string.
+
+input ------> A String from the user
+constriant--> Non-empty String
+output -----> Palindrome or not
+
+logic
+
+LIRIL ===> LIRIL
+
+low=0
+high=len-1
+while(low<=high){
+	if(s[low]!=s[high])
+		return 0;
+	low++;
+	high--;
+}
+return 1;
+
+boolean ispali(String s){
+int low=0;
+int high=s.length()-1;
+while(low<=high){
+	if(s.charAt(low)!=s.charAt(high))
+		return false;
+	low++;
+	high--;
+}
+return true;
+}
+
+python implementation:
+----------------------
+s=input()
+print("valid" if s==s[::-1] else "invalid")
+
+
+What if name starts with capital letter like Aditya
+
+"Aditya".lowercase ====> aditya
+
+Sir Can you please provide solution without inbuilt function in JAVA?
+
+
+
+LBP31
+
+Create PIN using Three given numbers
+
+"Secure Assets Private Ltd", a small company that deals with lockers has recently started manufacturing digital locks which can be locked and unlocked using PINs (passwords). 
+You have been asked to work on the module that is expected to generate PINs using three input numbers.
+
+The three given input numbers will always consist of three digits each 
+i.e. each of them will be in the range >=100 and <=999.
+
+Bellow are the rules for generating the PIN.
+
+1. The PIN should made up of 4 digits.
+2. The unit (ones) position of the PIN should be the least of the units position of the three numbers.
+3. The tens position of the PIN should be the least of the tens position of the three input numbers.
+4. The hundreds position of the PIN should be least of the hundreds position of the three numbers.
+5. The thousands position of the PIN should be the max of all digits in the three input numbers.
+
+input ----------> three numbers
+constraints ----> all the numbers must be in the range of >=100 and <=999
+output ---------> PIN value
+
+LOGIC:
+
+read n1,n2,n3
+
+d1 = min(n1%10,n2%10,n3%10)
+d2 = min((n1/10)%10,(n2/10)%10,(n3/10)%10)
+d3 = min((n1/100)%10,(n2/100)%10,(n3/100)%10)
+d4 = max(maxD(n1),maxD(n2),maxD(n3))
+
+pin = d4*1000+d3*100+d2*10+d1
+
+n1=123
+n2=456
+n3=789
+
+d1=min(3,6,9)=3
+d2=min(2,5,8)=2
+d3=min(1,4,7)=1
+d4=max(3,6,9)=9
+
+pin=9*1000+1*100+2*10+3
+   =9000+100+20+3
+   =9123
+
+python implementation:
+----------------------
+n1=[int(i) for i in input()]
+n2=[int(i) for i in input()]
+n3=[int(i) for i in input()]
+d1=min(n1[2],n2[2],n3[2])
+d2=min(n1[1],n2[1],n3[1])
+d3=min(n1[0],n2[0],n3[0])
+d4=max(max(n1),max(n2),max(n3))
+print(d4*1000+d3*100+d2*10+d1)
+
+LBP32
+
+Program to count number of special characters and white spaces in a given string.
+
+input --------> A string from the user
+constraint ---> non-empty string
+output -------> number of special characters
+
+
+logic:
+
+read str from the user
+
+not equal to a-z or A-Z or 0-9 else c++
+
+python implementation:
+----------------------
+s=input()
+counter=0
+for i in s:
+    if not i.isalnum():
+        counter=counter+1
+print(counter)
+
+LBP33
+
+An e-commerce company plans to give their customers a discount for the newyears holiday. 
+The discount will be calcualted on the basis of the bill amount of the order placed. 
+The discount amount is the sum of all the odd digits in the customers total bill amount. 
+if no odd digits is present in the bill amount, then discount will be zero.
+
+input ---------> the input consists of an integer bill amount, representing the customers total bill amount.
+
+output -------> print an integer representing the dicount for the given total bill amount.
+constraint ---> n>0
+
+logic
+
+sum of odd digits
+
+python implementation:
+----------------------
+n=int(input())
+s=0
+while n!=0:
+    d=n%10
+    if d%2!=0:
+	s=s+d
+    n=n//10
+print(s)
+
+
+LPB34
+
+Email name should be starts with alphabet and should follw by number or underscore. 
+It should contains either numbers or underscore finally ends with @gmail.com only, 
+Then given email id is true otherwise false.
+
+input ------> email id
+constraint -> lowercase alphabet [a-z] followed by underscore or digit and gmail.com
+output -----> true or false
+
+python implementation: 
+----------------------
+import re
+m = re.fullmatch("[a-z]+[_|0-9]@gmail[.]com",input())
+print("true" if m!=None else "false")
+
+
+LBP35
+
+The IT company "Soft ComInfo" has decided to transfer its messages through 
+the N/W using new encryption technique. 
+The company has decided to encrypt the data using the non-prime number concept.
+The message is in the form of a number and 
+the sum of non-prime digits present in the message is used as the encryption key.
+
+Write an algorithm to determine the encryption key.
+
+input ------> The input consists of an integer numMsg representing the numeric form of the message.
+output ------> print an integer representing the encryption key.
+note: Digit 1 and 0 are considered as a prime number.
+
+sum of non-prime digits
+
+python implementation:
+----------------------
+print(sum([int(i) for i in input() if i in "4689"]))
+
+LBP36
+
+Implement a program to return First capital letter in a String
+
+input -------> A string from the user
+constraint --> non-empty string
+output ------> First Capital letter
+
+python implementation:
+----------------------
+s=input()
+for i in s:
+    if i.isupper():
+        print(i)
+        break
+
+
+LBP37
+
+Implement a program to calculate toggle case of each characters of a string
+
+input -------> A String from user
+constriant --> non-empty String
+output ------> toggle case string
+
+A=>a
+a=>A
+
+python implementation:
+----------------------
+s=input()
+print(s.swapcase())
+
+
+LBP38
+
+A company launched a new text editor that allows users to enter english letters, numbers and white spaces only.
+If a user attempts to enter any other type of characters, it is counted as miss.
+Given a String text, 
+write an algorithm to help the developer detect the number of misses by a given user in the given input.
+
+input --------> String
+constraint ---> non-empty string
+output -------> number of misses
+
+
+python implementation:
+----------------------
+s=input()
+c=0
+for i in s:
+    if i.isalnum() or i.isspace():
+        continue
+    else:
+        c=c+1
+print(c)
+
+LBP39
+
+Implement the following function
+	int BlackJack(int n1,int n2);
+
+the function accepts two +ve integers n1 and n2 as its arguments. 
+Implement the function on given two vlaues to return an int value as follows
+
+return whichever value is nearest to 21 without going over. Return if they go both go over.
+
+input --------> two int values n1 and n2
+constraint ---> no
+output -------> 0 or n1 or n2
+
+
+n1>21 and n2>21 --------> 0
+n1>21 ------------------> n2
+n2>21 ------------------> n1
+n1<21 and n2<21 --------> max in n1 and n2
+
+
+python implementation:
+----------------------
+def bj(n1,n2):
+    if n1>21 and n2>21:
+        return 0
+    if n1>21:
+        return n2
+    elif n2>21:
+        return n1
+    else:
+        return max((n1,n2))
+n1=int(input())
+n2=int(input())
+print(bj(n1,n2))
+
+LBP40
+
+A company wishes to transmit data to another server. 
+The data consists of numbers only. 
+To secure the data during transmission, they plan to reverse the data during transmission, 
+they plan to reverse the data first.
+Write an algorithm to reverse the data first
+
+input -----> an integer data, representing the data to be transmitted
+output ----> print an integer representing the given data in reverse form
+
+python implementation:
+----------------------
+s=input()
+print(s[::-1])
+
+
+LBP41
+
+One Time Password
+
+A company wishes to devise an order confirmation procedure. 
+They plan to require an extra confirmation instead of simply auto-confirming 
+the order at the time it is placed. for this purpose, 
+the system will generate one time password to be shared with the customer. 
+The customer who is placing the order has to enter the OTP to confirm the order. 
+The OTP generated for the requested order ID, as the product of the digits in orderID. 
+
+Write an algorithm to find the OTP for the OrderID.
+
+input -----> an intger representing order id
+output ----> an integer representing OTP
+
+logic:
+
+p=1;
+while(n!=0){
+	d=n%10;
+	p=p*d;
+	n=n/10;
+}
+print p
+
+
+python implementation:
+----------------------
+import math
+print(math.prod([int(i) for i in input()]))
+
+
+LBP42
+
+Jackson, a math student, is developing an application on prime numbers. 
+for the given two integers on the display of the application, 
+the user has to identify all the prime numbers within the given range (including the given values). 
+afterwards the application will sum all those prime numbers. 
+Jackson has to write an algorithm to find the sum of all the prime numbers of the given range.
+
+Write an algorithm to find the sum of all the prime numbers of the given range.
+
+input -----> two space sepearted integers RL and RR.
+output ----> sum of the prime numbers between RL and RR.
+
+logic
+
+s=0;
+for(i=n1;i<=n2;i++){
+	if(isprime(i))
+		s=s+i;
+}
+
+
+python implementation:
+----------------------
+def isprime(n):
+    f=0
+    for i in range(1,n+1):
+        if n%i==0:
+            f=f+1
+    return f==2
+
+n1=int(input())
+n2=int(input())
+s=0
+for i in range(n1,n2+1):
+    if isprime(i):
+        s=s+i
+print(s)
+
+LBP43
+
+An e-Commerce company plans to give thier customers a discount for the newyears holiday. 
+The discount will be calcualted on the basis of the bill amount of the order place.
+The discount amount is the product of the sum of all odd digits and the sum of all even digits of 
+the customers total bill amount.
+
+input ----> an integer bill amount, representing the total bill amount of the customer.
+output ---> print an inteer representing the discount amount for the given total bill.
+
+logic:
+
+se=0
+so=0
+while(n!=0){
+	d=n%10;
+	if(d%2==0)
+		se=se+d;
+	else
+		so=so+d;
+	n=n/10;
+}
+print(se*so);
+
+python implementation:
+----------------------
+n=int(input())
+se=0
+so=0
+while n!=0:
+    d=n%10
+    if d%2==0:
+        se=se+d
+    else:
+        so=so+d
+    n=n//10
+print(se*so)
+
+LBP44
+
+War of Numbers
+
+There is a great war between the even and odd numbers. 
+Many numbers already lost thier life in this war and its your task to end this. 
+You have to determine which group sums larger. the even, or the odd, the larger group wins.
+
+Create a function that takes an array of integers , sums the even and odd numbers seperately, 
+then return the difference between sum of even and odd numbers.
+
+input --------> number and array elements
+constraint ---> no
+output -------> difference between sum of even and odd numbers
+
+logic:
+
+se=0
+so=0
+for(i=0;i<n;i++)
+{
+	if(a[i]%2==0)
+		se=se+a[i];
+	else
+		so=so+a[i];
+}
+diff=abs(se-so)
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+se=0
+so=0
+for i in L:
+    if i%2==0:
+        se=se+i
+    else:
+        so=so+i
+print(abs(se-so))
+
+
+LBP45
+
+Perfect Number
+
+Create a function that tests whether or not an integer is a perfect number. 
+A perfect number is a number that can be written as sum of its factors. 
+(equal to sum of its proper divisors) excluding the number itself.
+
+input ------> a number from the user
+constraint -> n>0
+output -----> true or false
+
+
+4 -----> 1, 2, 4 -----> 1, 2 ----> 1+2=3
+6 -----> 1, 2, 3, 6 --> 1, 2, 3 -> 1+2+3=6
+
+s=0;
+for(i=1;i<n;i++)
+{
+	if(n%i==0)
+		s=s+i;
+}
+if s==n then yes else no
+
+
+python implementation:
+----------------------
+n=int(input())
+s=0
+for i in range(1,n):
+    if n%i==0:
+        s=s+i
+print('true' if s==n else 'false')
+
+
+
+LBP46
+
+Magic Date
+
+Program to read date, month and year from the user and check whether it is magic date or not.
+Here are the rules for magic date.
+
+1) mm*dd is a 1-digit number that matches the last digit in YYYY
+2) mm*dd is a 2-digit number that matches the last two digits in YYYY
+3) mm*dd is a 3-digit number that matches the last three digits in YYYY
+
+input --------> three int values
+constraint----> no
+output -------> true or false
+
+1-5-2005 ---> Yes
+2-5-2005 ---> No
+2-5-2010 ---> Yes
+
+
+python implementation:
+----------------------
+L=[i for i in input().split("-")]
+print(str(L[2].endswith(str(int(L[0])*int(L[1])))).lower())
+
+LBP47
+
+Oddish or Evenish
+
+Create a function that determines whether a number is Oddish or Evenish. 
+A number is Oddish if the sum of all of its digits is Odd, 
+and number is Evenish if the sum of all of its digits is even, 
+if a number is Oddish return Oddish else return Evenish.
+
+input ----------> a number
+constraint -----> n>0
+output ---------> Oddish or Evenish
+
+logic:
+------
+s=0;
+while(n!=0){
+      d=n%10;
+      s=s+d;
+      n=n/10;
+}
+if s%2==0 then print "Evenish" else "Oddish"
+
+python implementation:
+---------------------
+print("Evenish" if sum([int(i) for i in input()])%2==0 else "Oddish")
+
+
+LBP48
+
+Accept video length in minutes the format is mm:ss in String format, 
+create a function that takes video length and return it in seconds.
+
+input --------> video length in mm:ss
+constraint----> no
+output -------> length in seconds
+
+01:00 ====> 60
+02:05 ====> 120+5=125
+22:01=====> 1320+1=1321
+
+01====> 0 ====> octal
+01====> int(01) ===> 1
+
+int convert(char ch){
+	return ch-48;
+}
+
+a=97
+A=65
+0=48
+1=49 and so on
+
+01===> char,char ===> '0'-48
+                 ===> 48-48 = 0
+		 ===> '1' - 48
+		 ===> 49-48=1
+
+
+python implementation:
+----------------------
+l=input().split(":")
+print(int(l[0])*60+int(l[1]))
+
+LBP49
+
+Next Prime
+
+Given an integer, create a function that returns the next prime. 
+If the number is prime, return the number itself.
+
+input ----------> a number
+constraint -----> prime number
+output ---------> prime number
+
+logic:
+-----
+f=0
+for(i=1;i<=n;i++)
+{
+	if(n%i==0)
+	  f++;
+}
+if f==2 then it is prime else not
+
+python implementation:
+----------------------
+def isprime(n):
+    f=0
+    for i in range(1,n+1):
+        if n%i==0:
+            f=f+1
+    return f==2
+
+n=int(input())
+while True:
+    if isprime(n):
+        print(n)
+        break
+    n=n+1
+
+LBP50
+
+Sum of digits between two numbers
+
+Create a function that sums the total number of digits between two numbers inclusive. 
+for example, if the numbers are 19 and 22, then (1+9)+(2+0)+(2+1)+(2+2)=19.
+
+input ----------> a number from the user
+constraints ----> no
+output ---------> sum of digits
+
+
+for(i=n1;i<=n2;i++)
+{
+    s=s+sumofdigits(i);
+}
+print s value
+
+
+python implementation:
+----------------------
+n1=int(input())
+n2=int(input())
+s=0
+for i in range(n1,n2+1):
+    s=s+sum([int(j) for j in str(i)])
+print(s)
+
+LBP51
+
+Defanging an IP address
+
+Given a valid IP address, return a defanged version of that IP address. 
+A defanged IP address replaces every period '.' with "[.]".
+
+input ----------> A string
+constraint -----> non-empty String
+output ---------> replacement String
+
+. ====> [.]
+
+python implementation:
+----------------------
+s=input()
+print(s.replace('.','[.]'))
+
+LBP52
+
+Jewels and Stones
+
+You are given Strings jewels representing the types of stones that are jewels, 
+and stones representing the stones you have. 
+Each character in stones is a type of stone you have 
+you want to know how many of the stones you have are also jewels.
+
+Letter are case sensitive. so "a" is considered as a different type of stone from "A".
+
+input ------> A string
+constriant -> no
+output -----> how many of the stones
+
+python implementation:
+----------------------
+s1=input()
+s2=input()
+c=0
+for i in s1:
+    c=c+s2.count(i)
+print(c)
+
+
+LBP53
+
+Given a string s, and an integer array indices of the same length. 
+The string s will be shuffled such that the character at 
+the ith position moves to indices[i] in the shuffled string, 
+return shuffled string.
+
+input ---------> a string and an array
+constraint ----> no
+output --------> a string
+
+python implementation:
+----------------------
+s=input()
+a=[int(i) for i in input().split()]
+b=[0]*len(s)
+for i in range(0,len(s)):
+    b[a[i]]=s[i]
+print(''.join(b))
+
+LBP54
+Get word count
+
+Create a function/method that takes a string and return the word count. The string will be a sentence.
+
+Input: A string 
+Constraints: No 
+Output: Word count
+
+python implementation:
+----------------------
+s=input()
+l=s.split()
+print(len(l))
+
+LBP55
+
+Check if String ending matches second String
+
+Create a function/method that takes two Strings and 
+returns true of the first string ends with second string, otherwise return false.
+
+Input:  two strings
+Constraints: No 
+Output: true or false
+
+Java ------> s1.endsWith(s2) 
+Py --------> s1.endswith(s2)
+
+
+python implementation:
+----------------------
+s1=input()
+s2=input()
+print('true' if s1.endswith(s2) else 'false')
+
+
+in python W is small why?
+
+everything is written in lowercase letters only.
+
+LBP56
+
+Shuffle the Name
+
+Create a function/method that accepts a string (of person’s first and last name) and 
+returns a string with in first and last name swapped).
+
+Input:  two space separated strings
+Constraints: No 
+Output: return last name followed by first name
+
+
+python implementation:
+----------------------
+s1=input()
+s2=input()
+print(s2,s1)
+
+
+
+LBP57
+
+Reverse the order of a String
+
+create a method/function that takes a string as its argument and returns the string in reversed order.
+
+input ---------> a string 
+constraint ----> no
+output --------> reversed string
+
+
+Stack
+
+C ====> Arrays and Pointers
+C++ ==> Arrays, Stack and Pointers
+Java => Arryas, Stack
+Python=> List, Stack
+
+List ====> append(), pop()
+
+
+
+python implementation:
+----------------------
+print(input()[::-1])
+
+LBP58
+
+Re-form the word
+
+A word has been split into a left part and right part. 
+Re-form the word by adding both halves together changing the first to an uppercase letter.
+
+input ---------> two strings from the user
+constraint ----> no
+output --------> concatenated string with caps in first character
+
+prakash, babu ====> Prakashbabu
+
+
+python implementation:
+----------------------
+s1=input()
+s2=input()
+print((s1+s2).title())
+
+LBP59
+
+Anagrams
+
+Two strings a and b are called anagrams, if they contain all the same characters in the same frequencies.
+
+input --------> two strings a and b
+constraint ---> no
+output -------> true or false
+
+abc, bca ---> true
+abc, bcc ---> false
+
+logic:
+
+read s1
+read s2
+sort s1 in asc
+sort s2 in asc
+compare two string for equality ---> true or false
+
+abc ----> abc
+bca ----> abc
+
+
+python implementation:
+----------------------
+s1=input()
+s2=input()
+print('true' if sorted(s1)==sorted(s2) else 'false')
+
+LBP60
+
+Max Occurring Character
+
+Given a string, implement a program to find max occurring character in the given string
+
+input -------> A string from the user.
+constraints--> No
+output ------> max occurring character
+
+logic:
+
+welcome ====> e
+java =======> a
+
+a[256]={0}
+for(i=0;s[i];i++){
+	a[s[i]]++;
+}
+
+a[97]=2
+a[j]=1
+a[v]=1
+
+max element is 2
+
+
+python implementation
+---------------------
+import collections
+s=input()
+r=collections.Counter(s)
+#print(r)
+print(max(r,key=r.get))
+
+LBP61
+
+Determine the color of a chess board square
+
+You are given coordinates, a string that represents the coordinates of a square of the chess board. 
+bellow is the chess board for your reference.
+
+Return True if the saquare is in white, and false if the square is in Black.
+
+The coordinates will always represent a valid chess board square. 
+The coordinates will always have the letter first, and the number second.
+
+input ----------> a string
+constraint -----> length of the string is 2, a<=c[0]<=h and 1<=c[1]<=8
+output ---------> true or false
+
+8x8=64 cells
+
+a1 ===> color true else false
+
+
+python implementation:
+----------------------
+s=input()
+x=ord(s[0])-96
+y=ord(s[1])
+print("true" if x%2!=y%2 else "false")
+
+1, a=97 
+2, b=98
+
+LBP62
+
+Find the Bomb
+
+Write a function that finds the word "bomb" in the given string (not case sensitive) 
+return "DUCK!" if found, else return "Relax there's no bomb."
+
+input ---------> a string
+constraint ----> no
+output --------> "DUCK!" or "Relax, There's no bomb."
+
+
+
+
+python implementation:
+----------------------
+s=input().lower()
+print("DUCK!" if "bomb" in s else "Relax, there's no bomb.")
+
+LBP63
+
+How many vowels
+
+Create a function that takes a string and returns the number of vowels contained within it.
+
+input -----------> a string
+constraint ------> no
+output ----------> number of vowels
+
+python implementation:
+----------------------
+s=input()
+c=0
+for i in s:
+    if i in "aeiouAEIOU":
+        c=c+1
+print(c)
+
+LBP64
+
+X's and O's, Nobody knows
+
+Create a function that takes a string, 
+check if it has the same number of x's and o's and returns either true or false.
+
+Rules:
+
+1. return boolean value true or false.
+2. returns true if the amount x's and o's are the same.
+3. returns false if they are not the same amount.
+4. the string can contains any character.
+5. when 'x' and 'o' are not in the string, return true.
+
+input ---------> a string
+constraints----> no
+output --------> true or false
+
+logic:
+-----
+xc = count number of x's in s
+oc = count number of o's in s
+if xc==oc then print true else false
+
+python implementation:
+----------------------
+s=input()
+xc=s.count('x')
+oc=s.count('o')
+print('true' if xc==oc else 'false')
+
+LBP65
+
+Stuttering Function
+
+write a function that shutters a word as if someone is struggling to read it. 
+The first two letters are repeated twice with an ellipsis ... and 
+then the word is pronounced with a question mark?
+
+input ------------> a string
+contraint --------> no
+output -----------> xx... xx... ~~~~~~~?
+
+
+python implementation:
+----------------------
+s=input()
+print(f"{s[0]}{s[1]}...{s[0]}{s[1]}...{s}?")
+
+
+LBP66
+
+Repeating Letters
+
+Create a method that takes a string and returns a string in which each character is repeated once.
+
+input ---------------> String from the user
+constraint ----------> No
+output --------------> String
+
+
+python implementation:
+----------------------
+s=input()
+for i in s:
+    print(i*2,end='')
+
+LBP67
+
+Double Letters
+
+Create a function that takes a word and returns true if the word has two consecutive identical letters.
+
+input ---------> A string
+constraint-----> No
+output --------> true or false
+
+aabc ----> true
+baba ----> false
+abba ----> true
+
+python implementation:
+----------------------
+s=input()
+found=False
+for i in range(len(s)-1):
+    if s[i]==s[i+1]:
+        found=True
+        break
+print(str(found).lower())
+
+doubt:
+------
+	for(i=0;i<s.length()-1;i++)
+        {
+            if(s.charAt(i)==s.charAt(i+1))
+            {
+                found=true;
+                break;
+            }
+        }
+
+abc
+0=>a
+1=>b
+2=>c
+
+i=0 ---> s.charAt(0)==s.charAt(0+1) ----> a==b
+i=1 ---> s.charAt(1)==s.charAt(1+1) ----> b==c
+//i=2 ---> s.charAt(2)==s.charAt(2+1) ----> c==RE:
+
+
+LBP68
+
+Andy, Ben and Charlotte are playing a board game. 
+The three of them decided to come up with a new scoring system. 
+A player's first initial ("A","B" & "C") denotes that players scoring a single point. 
+Given a string of capital letters. returns an array of the player's scores.
+
+input --------------> A String
+constraint ---------> No
+output -------------> score
+
+12w640 ===> 1+2+6+4+0=13
+
+AABBC ===> A=2, B=2, C=1
+
+python implementation:
+----------------------
+s=input()
+print(s.count('A'),s.count('B'),s.count('C'))
+
+LBP69
+
+Remove Every vowel from a String
+
+Create a function that takes a string and returns a new string with all vowels removed. 
+
+input -------------> a string 
+constraints -------> No
+output ------------> a string
+
+
+python implementation:
+----------------------
+import re
+print(re.sub("[aeiou]","",input()))
+
+LBP70
+
+Space between each character
+
+Create a function that takes a string and returns a string with spaces in between all of the characters.
+
+input ------------> a string
+constraints-------> No
+output -----------> string
+
+
+python implementation:
+----------------------
+s=input()
+for i in s:
+    print(i,end=' ')
+
+
+LBP71
+
+VOWEL REPLACER
+
+Create a function that replaces all the vowels in a string with a specified character,
+
+input -----------> A string from the user and a character
+cons ------------> no
+output ----------> A string
+
+LOGIC:
+
+read string from the user
+read character from the user
+
+for each char ch 
+   if ch is aeiou then print c
+   else print ch
+
+python implementation:
+----------------------
+import re
+s1=input()
+s2=input()
+print(re.sub("[aeiou]",s2,s1))
+
+LBP72
+
+Say "Hello" Say "Bye"
+
+Write a function that takes a string name and number num (either 1 or 0) and 
+return "Hello"+name if number is 1, otherwise "Bye"+name.
+
+input ------> a string from the user
+constraint -> no
+output -----> a string
+
+python implementation:
+----------------------
+s=input()
+n=int(input())
+if n==1:
+    print("Hello",s)
+else:
+    print("Bye",s)
+
+LBP73
+
+VALID ZIP CODE
+
+zipcodes consists of 5 consecutive digits.
+Given a string, write a function to determine whether the input is a valid zip code. 
+a valid zipcode is as follows
+
+1. must contain only numbers.
+2. it should not contain any spaces.
+3. length should be only 5.
+
+input ------> A string
+constraint -> no
+output -----> true or false
+
+logic:
+
+count=0
+for i=0;s[i];i++
+{
+	if s[i]>='0' and s[i]<='9'
+	   count++;
+}
+if c==5 then print true else false
+
+
+python implementation:
+----------------------
+s=input()
+c=0
+for i in s:
+    if i.isdigit():
+        c=c+1
+print("true" if c==5 else "false")
+
+
+LBP74
+
+Returns the middle character of a string
+
+create a function that takes a string and returns, the middle character(s). 
+if the word's length is odd return the midlle character. 
+if the word's length is even, return the middle two characters.
+
+input -----> a string from the user
+constraint-> no
+output ----> middle character(s)
+
+logic:
+
+if length is even print s[n/2-1],s[n/2]
+if length is odd print s[n/2]
+
+abc ----> b
+abcd ---> bc
+
+
+python implementation:
+----------------------
+s=input()
+n=len(s)
+if n%2==0:
+    print(s[n//2-1],s[n//2],sep='')
+else:
+    print(s[n//2])
+
+LBP75
+
+Index of first vowel
+
+create a function that returns the index of first vowel in a string
+
+input ------> a string
+con --------> no
+output -----> an int value
+
+logic:
+
+for(i=0;s[i];i++)
+{
+	if s[i] is aeiou
+	   then print i
+	   break
+}
+
+python implementation:
+----------------------
+s=input()
+for i in range(0,len(s)):
+    if s[i] in "aeiou":
+        print(i)
+        break
+
+
+LBP76
+
+Longest Word
+
+Write a function that finds the longest word in a sentence. 
+If two or more words are found, return the first longest word. 
+Characters such as apostophe, comma, period (and the like) count as part of the word 
+(e.g. O'Connor is 8 characters long).
+
+input ------> a string from the user
+con --------> no
+output------> longest word 
+
+
+python implementation:
+---------------------
+L=input().split()
+m=0
+s=""
+for i in L:
+    if len(i)>m:
+        m=len(i)
+        s=i
+print(s)
+
+LBP77
+
+Print all permutations of a string
+
+Given a string str, the task is to print all the permutations of str. A permutation is an arrangement of all or part of a set of objects, with regard to the order of the arrangement. For instance, the words ‘bat’ and ‘tab’ represents two distinct permutation (or arrangements) of a similar three letter word.
+
+input ----> string from the user
+con ------> no
+output ---> all permutations of the string
+
+
+python implementation:
+----------------------
+from itertools import permutations
+l=list(permutations(input()))
+for i in l:
+    print(''.join(i),end=' ')
+
+
+
+LBP78
+
+Removing Duplicate Characters from a string
+
+Given a string S, the task is to remove all the duplicates in the given string. 
+
+input --------> a string from the user
+con ----------> remove all duplicates
+output -------> a string without duplicates
+
+Ex:
+
+abc------> abc
+aba -----> ab
+
+
+python implementation:
+----------------------
+s=input()
+l=[]
+for i in s:
+    if i not in l:
+        l.append(i)
+print(''.join(l))
+
+LBP79
+
+Swap corner words and reverse middle characters
+
+Write a Java program to take an input string and exchange the first and last word and reverse the middle word.
+
+input -------> a string
+con ---------> no
+output ------> a string
+
+abc def mno xyz ----> xyz onm fed abc
+
+
+python implementation:
+----------------------
+s=input()
+l=s.split()
+print(l[-1],end=' ')
+for i in range(len(l)-2,0,-1):
+    print(l[i][::-1],end=' ')
+print(l[0])
+
+
+LBP80
+
+Valid Hex Code
+
+Create a function that determines whether a string is a valid hex code.
+A hex code must begin with a pound key # and is exactly 6 characters in length. 
+Each character must be a digit from 0-9 or an alphabetic character from A-F. All alphabetic characters may be uppercase or lowercase.
+
+input -----> a string from the user
+con -------> no
+output ----> true or false
+
+#XXXXXX ----> 7
+
+
+python implementation:
+----------------------
+import re
+print('true' if re.fullmatch("#[A-Fa-f0-9]{6}",input())!=None else 'false')
+
+
+LBP81
+
+Even Length Words
+
+Write a program to print even length words in a string?
+
+input -----> a string from the user
+con -------> no
+output ----> list of strings with even length
+
+
+logic:
+
+read string from the user
+fetch word by word
+and check length of word
+if length is even print that word
+
+hello world java
+
+hello ---> 5
+world ---> 5
+java ----> 4
+
+output: java
+
+
+python implementation:
+----------------------
+s=input()
+l=s.split()
+for i in l:
+    if len(i)%2==0:
+        print(i,end=' ')
+
+
+
+LBP82
+
+Change Every Letter to the Next Letter
+
+Write a function that changes every letter to the next letter:
+
+"a" becomes "b"
+"b" becomes "c"
+"d" becomes "e"
+and so on ...
+
+note: there is no z's in test cases, be happy.
+
+input ------> a string from the user
+cons -------> no
+output -----> modified string
+
+
+python implementation:
+----------------------
+s=input()
+for i in s:
+    print(chr(ord(i)+1),end='')
+
+LBP83
+
+First N Vowels
+
+Write a function that returns the first n vowels of a string.
+
+input ------> a string from the user and an integer value
+cons -------> Return "invalid" if the n exceeds the number of vowels in a string.
+output -----> return first n vowels in the string
+
+
+python implementation:
+----------------------
+import re
+s=input()
+n=int(input())
+ns=re.sub("[^aeiou]","",s)
+print("invalid" if n>len(ns) else ns[0:n])
+
+LBP84
+
+Is the String in Order?
+
+Create a function that takes a string and returns true or false, depending on whether the characters are in order or not.
+
+input -------> a string from the user
+cons --------> for non-empty string print invalid
+output ------> true or false
+
+'abcd' ----> true
+'abdc' ----> false
+
+s1='abcd' ---> s2='abcd' ----> true
+s1='abdc' ---> s2='abcd' ----> false
+
+
+python implementation:
+----------------------
+s1=input()
+l=list(s1)
+l.sort()
+s2=''.join(l)
+print('true' if s1==s2 else 'false')
+
+
+LBP85
+
+Integer to English Words
+
+Convert a non-negative integer num to its English words representation.
+
+input ------> a number from the user
+con --------> n>0
+output -----> number in English words
+
+
+123 ===> one hundred twenty three
+9999 ==> Nine Thousand Nine Hundred Ninty Nine
+
+
+python implementation:
+---------------------
+d1=["","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"]
+d2=["","","Twenty","Thirty","Fourty","Fifty","Sixty","Seventy","Eighty","Ninety"]
+
+def check(n,string):
+    if n==0:
+        return ''
+    elif n>=19:
+        s=d2[n//10]+' '+d1[n%10]+string
+        return s
+    else:
+        return d1[n]+' '+string
+
+n=int(input())
+if n==0:
+    print('zero')
+else:
+    result=check((n//1000)%100,'Thousand ')
+    result+=check((n//100)%10,'Hundred ')
+    result+=check(n%100,'')
+    print(result)
+
+
+LBP86
+
+C*ns*r*d Str*ngs
+
+Someone has attempted to censor my strings by replacing every vowel with a *, l*k* th*s. 
+Luckily, I've been able to find the vowels that were removed.
+
+Given a censored string and a string of the censored vowels, return the original uncensored string.
+
+input --------> original & replacement strings
+con ----------> no
+output -------> updated string after replacement
+
+w*lc*m*,eoe ====> welcome
+
+logic:
+
+read s1 and s2
+
+for each char in s1
+{
+	if ch is *
+	print s2[j]
+	else
+	print s1[i]
+}
+
+
+python implementation:
+----------------------
+s1=input()
+s2=input()
+j=0
+for i in s1:
+    if i=='*':
+        print(s2[j],end='')
+        j=j+1
+    else:
+        print(i,end='')
+
+LBP87
+
+parentheses balance
+
+Given a string S of '(' and ')' parentheses, we add the minimum number of parentheses ( '(' or ')', and in any positions ) so that the resulting parentheses string is valid.
+Formally, a parentheses string is valid if and only if:
+It is the empty string, or It can be written as AB (A concatenated with B), where A and B are
+valid strings, or It can be written as (A), where A is a valid string. 
+Given a parentheses
+string, return the minimum number of parentheses we must add to make the resulting string valid.
+
+input --------> a string from the user
+con ----------> no
+output -------> number of parentheses to be added
+
+
+python implementation:
+----------------------
+s=input()
+c=0
+for i in s:
+    if i=='(':
+        c=c+1
+    if i==')':
+        c=c-1
+print(c)
+
+
+LBP88
+
+American keyboard
+
+Given a string, return the true if that can be typed using letters of alphabet on only
+one row's of American keyboard like the image below.
+In the American keyboard:
+
+the first row consists of the characters "qwertyuiop",
+the second row consists of the characters "asdfghjkl", and
+the third row consists of the characters "zxcvbnm".
+
+dad ---> true
+mom ---> false
+
+Note: 
+1. You may use one character in the keyboard more than once. 
+2. You may assume the input string will only contain letters of alphabet.
+
+input -------> a string from the user
+cons  -------> no
+output ------> true or false
+
+logic:
+
+read string from the user
+
+read each char from the string
+if char is there in r1 or r2 or r3 ---> c1,c2,c3
+
+
+python implmenetation:
+---------------------
+s=input()
+c1,c2,c3=0,0,0
+for i in s:
+    if i in "qwertyuiop":
+        c1=c1+1
+    if i in "asdfghjkl":
+        c2=c2+1
+    if i in "zxcvbnm":
+        c3=c3+1
+print(str(c1==len(s) or c2==len(s) or c3==len(s)).lower())
+
+
+LBP89
+
+Rotate String 
+
+Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.
+
+A shift on s consists of moving the leftmost character of s to the rightmost position.
+
+For example, if s = "abcde", then it will be "bcdea" after one shift.
+
+
+bcdea ---> bcdea
+
+abcde
+bcdea
+cdeab
+deabc
+eabcd
+
+abcdeabcde
+
+
+python implementation:
+----------------------
+s1=input()
+s2=input()
+print('true' if s2 in s1+s1 else 'false')
+
+
+
+LBP90
+
+Missing Letters
+
+Given a string containing unique letters, 
+return a sorted string with the letters that don't appear in the string.
+
+input ---------> a string from the user
+con -----------> no
+output --------> return missing characters
+
+logic:
+
+read the string as s
+
+a[256] ---> assci values
+
+abde ---> c
+
+a[97]=1
+a[98]=1
+a[99]=0
+a[100]=1
+a[101]=1 and so on
+
+for(i=97;i<=122;i++)
+{
+	if(a[i]==0)
+		printf("%c",i);
+}
+
+
+python implementation:
+----------------------
+s=input()
+for i in range(97,123):
+    n=chr(i)
+    if n not in s:
+        print(n,end='')
+
+LBP91
+
+Replace Letters With Position In Alphabet
+
+Create a function that takes a string and replaces each letter with its appropriate position in the alphabet. 
+"a" is 1, "b" is 2, "c" is 3, etc, etc.
+
+Note: If any character in the string isn't a letter, ignore it.
+
+input -----------> a string from the user
+constriant ------> non-empty string
+output ----------> position of characters seperated by space
+
+abc ---> 123
+
+a-96=97-96=1
+b-96=98-96=2
+c-96=99-96=3 and so on
+
+
+python implementation:
+----------------------
+s=input().lower()
+for i in s:
+    if i.isalpha():
+        print(ord(i)-96,end=' ')
+
+LBP92
+
+Replace character with it's occurrence
+
+Implement a Program to replace a character with it's occurrence in given string.
+
+input ---------> a string and a character from the user.
+con -----------> non-empty string
+output --------> replaced string
+
+
+String and Character
+
+"abcabab",'a'
+
+output: 1bc2b3b
+
+
+python implementation:
+----------------------
+s=input()
+ch=input()
+c=1
+for i in s:
+    if i==ch:
+        print(c,end='')
+        c=c+1
+    else:
+        print(i,end='')
+
+
+
+LBP93
+
+first non-repeated character
+
+Program to find first non-repeated character
+
+input----> a non-empty string from the user
+con -----> no
+output --> non-repeated character
+
+india ----> nda ---> n
+indian ---> da ----> d
+
+
+python implementation:
+----------------------
+s=input()
+for i in s:
+    if s.count(i)==1:
+        print(i)
+        break
+
+india ---> nda
+
+a[0]='n'
+a[1]='d'
+a[2]='a'
+c=3
+a[c-1] ---> 
+
+
+
+LBP94
+
+Pangrams
+
+Implement a program to check whether the given string pangram or not. 
+A pangram is a string that contains all the letters of the English alphabet. 
+An example of a pangram is "The quick brown fox jumps over the lazy dog"
+
+input ----> a string from the user
+con ------> non-empty string
+output ---> Yes or No
+
+logic:
+
+a[26]={0}
+
+read string s from the user
+
+a[s[i]-97]++;
+
+abc
+
+a[97-97]=a[0]=1
+a[98-97]=a[1]=1
+a[99-97]=a[2]=1
+a[100-97]=a[3]=0
+
+if a[i]=0 then that char is not there....
+
+
+python implementation:
+----------------------
+s=input()
+ss="abcdefghijklmnopqrstuvwxyz"
+flag=True
+for i in ss:
+    if i not in s:
+        flag=False
+        break
+print("Yes" if flag else "No")
+
+
+
+LBP95
+
+Print First Letter of each Word
+
+Implement a function/Method to return first character in each word from the given input string.
+
+input-----> a string
+con-------> no
+output ---> first character in each string
+
+logic: tokenization
+
+
+
+python implementation:
+----------------------
+print(''.join([i[0] for i in input().split()]))
+
+
+LBP96
+
+Number of vowels
+
+Implement a program to return number of vowels present in the given string
+
+input ---------> a string from the user
+con -----------> non-empty string
+output --------> return number of vowels
+
+
+python implementation:
+----------------------
+s=input()
+c=0
+for i in s:
+    if i in "aeiou":
+        c=c+1
+print(c)
+
+LBP97
+
+Number of consonants
+
+Implement a program to return number of consonants present in the given string
+
+input ---------> a string from the user
+con -----------> non-empty string
+output --------> return number of consonants
+
+
+python implementation:
+----------------------
+s=input()
+c=0
+for i in s:
+    if i not in "aeiou":
+        c=c+1
+print(c)
+
+LBP98
+
+Check only digits
+
+Implement a program to check if a string contains only digits.
+
+input ----> a string from the user
+con ------> no
+output ---> Yes or No
+
+logic:
+------
+if s[i] is a digit counter++
+
+counter==strlen(s) Yes else No
+
+
+python implementation:
+----------------------
+print("Yes" if input().isdigit() else "No")
+
+LBP99
+
+Capitalize Every word first character
+
+Implement a program to capitalize first letter of each word in a string.
+
+input ----> a string from the user
+con ------> non-empty string
+output ---> a string with capitalization
+
+
+python implementation:
+----------------------
+print(input().title())
+
+LBP100
+
+Student Rewarded
+
+You are given a string representing an attendance record for a student.
+The record only contains the following three characters: 'A' : Absent. 'L' : Late. 'P' : Present. 
+A student could be rewarded if his attendance record doesn't contain more than one 'A' (absent) or more than two continuous 'L' (late).
+
+You need to return whether the student could be rewarded according to his attendance record.
+
+input ------> a string from the user
+con --------> non empty string
+output -----> Yes or No
+
+
+python implementation:
+----------------------
+s=input()
+print("No" if s.count('A')>1 or s.count("LLL")!=0 else "Yes")
+
+
+
+arrays:
+-------
+=> 1 or 2 or 3 values ----> variables
+=> huge values -----------> arrays
+=> collection of similar type of data elements.
+=> index concept.
+=> 0 to max_size-1
+
+int a[3];
+
+a[0], a[1], a[2]
+
+LBP101
+
+reading and writing an array
+
+Implement a program to read an array element and write on the screen.
+
+input -------> size of the array and array elements 
+con ---------> size<100 
+output ------> the given array
+
+logic:
+------
+read n value (size)
+declare an array 
+C---------> int a[100];
+C++ ------> int a[100];
+Java -----> int a[] = new int[n];
+Py -------> we dn't have array concept ---> list (growable)
+
+for(i=0;i<n;i++)
+read a[i]
+
+for(i=0;i<n;i++)
+print a[i]
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in L:
+    print(i,end=' ')
+
+LBP102
+
+sum of all elements in array
+
+Implement a program to read an array elements and print sum of all its elements.
+
+input -------> size of the array and array elements 
+con ---------> size<100 
+output ------> sum of all elements
+
+logic:
+
+sum=0;
+for(i=0;i<n;i++){
+	sum=sum+a[i];
+}
+print sum;
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+print(sum(L))
+
+LBP103
+
+sum of even numbers in an array
+
+Implement a program to read an array elements and print sum of all even elements.
+
+input -------> size of the array and array elements 
+con ---------> size<100 
+output ------> sum of all even elements
+
+logic:
+
+sum=0;
+for(i=0;i<n;i++){
+	if(a[i]%2==0)
+		sum=sum+a[i];
+}
+print sum;
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split() if int(i)%2==0]
+print(sum(L))
+
+LBP104
+
+sum of odd numbers in an array
+
+Implement a program to read an array elements and print sum of all odd elements.
+
+input -------> size of the array and array elements 
+con ---------> size<100 
+output ------> sum of all odd elements
+
+logic:
+
+sum=0;
+for(i=0;i<n;i++){
+	if(a[i]%2!=0)
+		sum=sum+a[i];
+}
+print sum;
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split() if int(i)%2!=0]
+print(sum(L))
+
+LBP105
+
+sum of prime numbers in an array
+
+
+Implement a program to read an array elements and print sum of all prime elements.
+
+input -------> size of the array and array elements 
+con ---------> size<100 
+output ------> sum of all prime elements
+
+logic:
+
+sum=0;
+for(i=0;i<n;i++){
+	if(isprime(a[i]))
+		sum=sum+a[i];
+}
+print sum;
+
+
+python implementation:
+----------------------
+def isprime(n):
+    factors=0
+    for i in range(1,n+1):
+        if n%i==0:
+            factors=factors+1
+    return factors==2
+n=int(input())
+L=[int(i) for i in input().split() if isprime(int(i))]
+print(sum(L))
+
+
+LBP106 
+
+sum of palindrome numbers in an array
+
+Implement a program to read an array elements and print sum of all palindrome numbers in array.
+
+input -------> size of the array and array elements 
+con ---------> size<100 
+output ------> sum of all palindrome numbers
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split() if i==i[::-1]]
+print(sum(L))
+
+LBP107
+
+sum of strong numbers in an array
+
+Implement a program to read an array elements and print sum of all strong numbers in array.
+
+input -------> size of the array and array elements 
+con ---------> size<100 
+output ------> sum of all strong numbers
+
+123 = 1! + 2! + 3! = 1+2+6 = 9
+145 = 1! + 4! + 5! = 1+24+120 = 145 Yes
+
+
+python implementation:
+----------------------
+import math
+def strong(n):
+    s=0
+    while n!=0:
+        d=n%10
+        s=s+math.factorial(d)
+        n=n//10
+    return s
+n=int(input())
+L=[int(i) for i in input().split() if int(i)==strong(int(i))]
+print(sum(L))
+
+LBP108
+
+sum of elements in an array ending with 3
+
+Implement a program to read an array elements and print sum of elements ending with 3 in array.
+
+input -------> size of the array and array elements 
+con ---------> size<100 
+output ------> sum of elements ending with 3
+
+a[i]%10==3
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split() if int(i)%10==3]
+print(sum(L))
+
+LBP109
+
+search for an element in an array
+
+Implement a program to search for an element in an array.
+
+input -------> size, array elements and element to search
+con ---------> size<100
+output ------> search for the given element
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+key=int(input())
+if key in L:
+    print(L.index(key))
+else:
+    print(-1)
+
+
+LBP110
+
+sort the elements in an array ASC
+
+Implement a program to sort the given array elements in ASC order.
+
+input -----> size and array elements
+con -------> size<100
+output ----> sorted array in ASC
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+for i in L:
+    print(i,end=' ')
+
+LBP111
+
+sort the elements in an array DESC
+
+Implement a program to sort the given array elements in DESC order.
+
+input -----> size and array elements
+con -------> size<100
+output ----> sorted array in DESC
+
+if(a[i]>a[j]) then swaping =====> asc
+if(a[i]<a[j]) then swaping =====> desc
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort(reverse=True)
+for i in L:
+    print(i,end=' ')
+
+LBP112
+
+binary search
+
+Implement a program to search for an element in an array.
+
+input -------> size, array elements and element to search
+con ---------> size<100
+output ------> search for the given element
+
+linear search ====> 0------n-1
+binary search ====> n/2
+
+2,4,1,5,3 ======> key=4
+1,2,3,4,5 ======> 4==3, 4>3, Right
+
+4,5
+
+index=-1
+low = 0;
+high = n-1;
+while(low<=high){
+	mid=(low+high)/2;
+	if(key==a[mid]){
+		index=mid;
+		break;
+	}
+	else if(key>a[mid])
+		low=mid+1;
+	else
+		high=mid-1;
+}
+printf("%d",index);
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+key=int(input())
+L.sort()
+if key in L:
+    print(L.index(key))
+else:
+    print(-1)
+
+sorting and searching
+
+LBP113
+
+max element in an array
+
+Implement a program to read array elements and find the max element in an array.
+
+input -------> size and array elements.
+con ---------> size<100
+output ------> return max element
+
+1. sort the array
+2. max element = last element in the array
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+print(L[n-1])
+
+LBP114
+
+min element in an array
+
+Implement a program to read array elements and find the min element in an array.
+
+input -------> size and array elements.
+con ---------> size<100
+output ------> return min element
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+print(L[1-1])
+
+
+LBP115
+
+diff between largest and smallest element in array
+
+Implement a program to read array elements and find the difference between max and min element in an array.
+
+input -------> size and array elements.
+con ---------> size<100
+output ------> return difference between max and min element.
+
+formula: a[n-1] - a[1-1]
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+print(L[n-1]-L[1-1])
+
+LBP116
+
+second largest element in an array
+
+Implement a program to read array elements and find the second max element in an array.
+
+
+input -------> size and array elements.
+con ---------> size<100
+output ------> return second max element in array
+
+sorted the array===> a[0], a[1], a[2], ..... a[n-3], a[n-2], a[n-1]
+
+1st max= a[n-1]		1st min=a[1-1]
+2nd max= a[n-2]		2nd min=a[2-2]
+3rd max= a[n-3]		3rd min=a[3-1]
+
+second largest element = a[n-2]
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+print(L[n-2])
+
+
+LBP117
+
+second smallest element in an array
+
+Implement a program to read array elements and find the second min element in an array.
+
+
+input -------> size and array elements.
+con ---------> size<100
+output ------> return second min element in array
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+print(L[2-1])
+
+
+LBP118
+
+number of occurrences of an element
+
+Implement a program to find the number of occurrences of the given element.
+
+input -------> size,array element and key element
+con ---------> size<100
+output ------> return number of occurrences
+
+
+python implementation:
+-----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+key=int(input())
+print(L.count(key))
+
+
+
+insert an element into an array ===> first, last
+delete an element from an array ===> first, last, from any location, element
+updatation ===> location and element
+
+C ===> flexiable
+Java=> fixed in size
+py ==> flexiable
+
+Only the problem is with java implementation ====> Collections Frame Works
+
+
+
+LBP119
+
+inserting element at first position in an array
+
+Implement a program to insert an element into an array at the first position
+
+input -------> size,array elements and element to be inserted
+con ---------> size<100
+output ------> return array after insertion
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.insert(0,int(input()))
+for i in L:
+    print(i,end=' ')
+
+LBP120
+
+inserting element at last position in an array
+
+Implement a program to insert an element into an array at the last position
+
+input -------> size,array elements and element to be inserted
+con ---------> size<100
+output ------> return array after insertion
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.append(int(input()))
+for i in L:
+    print(i,end=' ')
+
+LBP121
+
+delete an element from first location in an array
+
+Implement a program to delete an element from an array at the first position
+
+input -------> size,array elements 
+con ---------> size<100
+output ------> return array after deleting from first location
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.pop(0)
+for i in L:
+    print(i,end=' ')
+
+LBP122
+
+delete an element from last location in an array
+
+Implement a program to delete an element from an array at the last position
+
+input -------> size,array elements 
+con ---------> size<100
+output ------> return array after deleting from last location
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.pop()
+for i in L:
+    print(i,end=' ')
+
+LBP123
+
+delete an element from an array at the given location
+
+Implement a program to delete an element from an array at the position
+
+input -------> size,array elements and position
+con ---------> size<100
+output ------> return array after deleting from the location
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.pop(int(input()))
+for i in L:
+    print(i,end=' ')
+
+LBP124
+
+delete an element from an array 
+
+Implement a program to delete the given element from an array 
+
+input -------> size,array elements and element
+con ---------> size<100
+output ------> return array after deleting
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+e=int(input())
+if e in L:
+    L.remove(e)
+    for i in L:
+        print(i,end=' ')
+else:
+    print(-1)
+
+
+
+LBP125
+
+update an element in an array
+
+Implement a program to update an element in the given array
+
+input ------> size,array elements and element to be updated (old element & new element)
+con---------> size<100
+output -----> return array after updating
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+oe=int(input())
+ne=int(input())
+for i in range(0,n):
+    if L[i]==oe:
+        L[i]=ne
+for i in L:
+    print(i,end=' ')
+
+LBP126
+
+update an element in an array
+
+Implement a program to update an element in the given array based on position
+
+input ------> size,array elements and element to be updated and location
+con---------> size<100
+output -----> return array after updating
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+loc=int(input())
+ne=int(input())
+L[loc]=ne
+for i in L:
+    print(i,end=' ')
+
+insert, delete and update operations on arrays....
+
+
+	obj.add(object);
+	obj.add(int,object);
+	obj.remove(int);
+
+
+
+LBP127
+
+array reverse
+
+Write a program to reverse the elements present in an array
+
+input ------> size, array elements 
+con --------> size<100
+output -----> return array in reverse
+
+for(i=0;i<n;i++)
+	print a[i]
+
+for(i=n-1;i>=0;i--)
+	print a[i]
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in L[::-1]:
+    print(i,end=' ')
+
+n=5 ===> 0, 1, 2, 3, 4
+
+
+LBP128
+
+increment every element in an array by one unit
+
+Implement a program to increment every element by one unit in array.
+
+input ------> size, array elements 
+con --------> size<100
+output -----> increment each element by one unit
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in L:
+    print(i+1,end=' ')
+
+
+LBP129
+
+number of duplicate elements in array
+
+Implement a program to find the number of duplicate elements present in the given array.
+
+input ------> size, array elements 
+con --------> size<100
+output -----> number of duplicate elements in the array
+
+
+int b[999]={0};
+
+for(i=0;i<n;i++){
+	b[a[i]]++;
+}
+
+if b[i]>=2 then count++
+
+5
+1 1 2 2 3
+
+a[0]=1
+a[1]=1
+a[2]=2
+a[3]=2
+a[4]=3
+
+b[a[0]]++ ===> b[1]++ ===> b[1]=1
+b[a[1]]++ ===> b[1]++ ===> b[1]=2
+b[a[2]]++ ===> b[2]++ ===> b[2]=1
+b[a[3]]++ ===> b[2]++ ===> b[2]=2
+b[a[4]]++ ===> b[3]++ ===> b[3]=1
+
+b[1]=2
+b[2]=2
+b[3]=1
+
+
+python implementation:
+----------------------
+1st version:
+
+
+n=int(input())
+L=[int(i) for i in input().split()]
+d={}
+c=0
+for i in L:
+    d[i]=d.get(i,0)+1
+#print(d)
+for i in d.values():
+    if i>=2:
+        c=c+1
+print(c)
+
+
+LBP130
+
+print unique elements in array
+
+Implement a program to find the unique elements present in the given array.
+
+input ------> size, array elements 
+con --------> size<100
+output -----> print unique elements present in the array
+
+5
+1 1 2 3 4 ===> 1 2 3 4
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+LL=[]
+for i in L:
+    if i not in LL:
+        LL.append(i)
+for i in LL:
+    print(i,end=' ')
+
+LBP131
+
+sort an array of 0s, 1s and 2s
+
+Implement a program to read an array and sort array elements with 0s, 1s and 2s.
+
+input ------> size, array elements 
+con --------> size<100
+output -----> print sorted elements
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+for i in L:
+    print(i,end=' ')
+
+LBP132
+
+replace every element with the greatest element on its right side
+
+Implement a program to read an array and replace every element with the greatest element on its right side.
+
+input ------> size, array elements 
+con --------> size<100
+output -----> print updated array elements
+
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in range(n):
+    L[i]=max(L[i:])
+for i in L:
+    print(i,end=' ')
+
+LBP133
+
+sum of two arrays
+
+Implement a program to find the sum of two arrays and display the result array
+
+input -------> size and array elements
+con ---------> no
+output ------> print resultent array
+
+
+python implementation:
+----------------------
+n=int(input())
+L1=[int(i) for i in input().split()]
+L2=[int(i) for i in input().split()]
+for i in range(n):
+    print(L1[i]+L2[i],end=' ')
+
+LBP134
+
+sum of elements available at even index
+
+Implement a program to find the sum of elements avaiable at even index locations in an array.
+
+input ----> size and array elements
+con ------> no
+output ---> print sum value
+
+sum=0;
+for(i=0;i<n;i++)
+{	
+	if(i%2==0)
+		sum=sum+a[i];
+}
+print sum
+
+python implementation:
+----------------------
+n=int(input())
+sum=0
+L=[int(i) for i in input().split()]
+for i in range(n):
+    if i%2==0:
+        sum=sum+L[i]
+print(sum)
+
+
+LBP135
+
+sum of elements available at odd index
+
+Implement a program to find the sum of elements avaiable at odd index locations in an array.
+
+input ----> size and array elements
+con ------> no
+output ---> print sum value
+
+sum=0;
+for(i=0;i<n;i++)
+{	
+	if(i%2!=0)
+		sum=sum+a[i];
+}
+print sum
+
+
+python implementation:
+----------------------
+n=int(input())
+sum=0
+L=[int(i) for i in input().split()]
+for i in range(n):
+    if i%2!=0:
+        sum=sum+L[i]
+print(sum)
+
+
+LBP136
+
+sum of first and last, second and second last and so on
+
+Implement a program to find the sum of first and last, second and second last and so on in an array.
+
+input -----> size and array elements
+con -------> no
+output ----> print sum of first and last, second and second last and so on
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+i=0
+j=n-1
+while i<=j:
+    print(L[i]+L[j],end=' ')
+    i=i+1
+    j=j-1
+
+1 2 10 12 11
+
+12 14 20
+
+LBP137 
+
+print reverse of each number in an array
+
+Implement a program to print reverse of each element in an array
+
+input -----> size and array elements
+con -------> no
+output ----> print reverse of each element in an array
+
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[i for i in input().split()]
+for i in L:
+    print(i[::-1],end=' ')
+
+LBP138
+
+number of even and odd elements
+
+Implement a program to find number of even and odd elements in the given array
+
+input -------> size and array elements
+con ---------> no
+output ------> print number of even and odd elements line by line
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+ec=0
+oc=0
+for i in L:
+    if i%2==0:
+        ec=ec+1
+    else:
+        oc=oc+1
+print(ec)
+print(oc)
+
+
+Full Stack Java Developer [FSJD]
+
+1. Core Java
+2. UI Technologies: HTML
+3. UI Technologies: CSS
+4. UI Technologies: JS
+5. UI Technologies: JQuery
+6. Database Tool: MySQL
+7. Advanced Java: JDBC
+8. Advanced Java: Servlets
+9. Advanced Java: JSP
+10. Mini Projects
+
+FSJD Rs. 12000/-
+Core Java Fees Rs. 5000/-
+
+https://us02web.zoom.us/meeting/register/tZ0qf-GgqTsjEtWO_shmAUP3aez8iDgENA3j
+
+
+LBP139
+
+Sort only First half of the elements
+
+Implement a program to sort only first half of the array and keep remaining elements as original.
+
+input ------> size and array elements
+con --------> no
+output -----> sort only first half of the array
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in range(0,n//2):
+    for j in range(i+1,n//2):
+        if L[i]>L[j]:
+            L[i],L[j]=L[j],L[i]
+for i in L:
+    print(i,end=' ')
+
+LBP140
+
+Difference between two arrays
+
+Implement a program to find the difference between two arrays
+
+input -------> size and array elements
+con ---------> no
+output ------> print difference between two arrays as third array
+
+
+python implementation:
+----------------------
+n=int(input())
+L1=[int(i) for i in input().split()]
+L2=[int(i) for i in input().split()]
+for i in range(n):
+    print(L1[i]-L2[i],end=' ')
+
+LBP141
+
+rearrange an array in such an order that– smallest, largest, 2nd smallest, 2nd largest and on
+
+Implement a program to rearrange an array in such an order that- smallest,largest,2nd smallest, 2nd largest and so on.
+
+input ------> size and array elements
+con --------> no
+output -----> print the elements smallest,largest,2nd smallest,2nd largest and so on.
+
+
+5
+1 5 4 3 2 ---> 1 2 3 4 5 ---> 1 5 2 4 3 3
+
+6
+1 5 6 4 2 3 --> 1 2 3 4 5 6 --> 1 6 2 5 3 4
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+i=0
+j=n-1
+while i<=j:
+    print(L[i],L[j],end=' ')
+    i=i+1
+    j=j-1
+    
+LBP142
+
+Array of multiples
+
+Implement a program to create an array with n elements by taking multiples of m.
+
+input -----> m and n 
+con--------> size of the array must be n
+output ----> return an array with n elements which contains multiples of m.
+
+
+python implementation:
+----------------------
+m=int(input())
+n=int(input())
+for i in range(1,n+1):
+    print(m*i,end=' ')
+
+LBP143
+
+Inclusive Array Ranges
+
+Write a function that, given the start startNum and end endNum values, return an array containing all the numbers inclusive to that range. 
+
+Note:
+The numbers in the array are sorted in ascending order.
+If startNum is greater than endNum, return an array with the higher value. 
+
+input -----> n and m values
+con -------> no
+output ----> return an array with elements from n to m.
+
+
+python implementation:
+----------------------
+n=int(input())
+m=int(input())
+if n<=m:
+    for i in range(n,m+1):
+        print(i,end=' ')
+else:
+    print(n)
+
+LBP144
+
+Find the Average of the Letters
+
+Create a function that returns the average of an array composed of letters. 
+First, find the number of the letter in the alphabet in order to find the average of the array.
+
+A = 1
+B = 2
+C = 3
+D = 4
+E = 5
+average = total sum of all numbers / number of item in the set
+Return the result rounded to two decimal points.
+
+input -----> an array as string
+con -------> no
+output ----> Return the result rounded to two decimal points.
+
+
+
+python implementation:
+----------------------
+s=input()
+sum=0
+for i in s:
+    sum=sum+ord(i)-96
+print("%.2f"%(sum/len(s)))
+
+LBP145
+
+Eliminate Odd Numbers within an Array
+
+Create a function that takes an array of numbers and returns only the even values.
+
+Note:
+
+Return all even numbers in the order they were given.
+All test cases contain valid numbers ranging from 1 to 3000.
+
+input -----> size and an array
+con -------> no
+output ----> remove all odd numbers and print
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in L:
+    if i%2==0:
+        print(i,end=' ')
+
+LBP146
+
+Positive Count / Negative Sum
+
+Create a function that takes an array of positive and negative numbers. 
+Return an array where the first element is the count of positive numbers and 
+the second element is the sum of negative numbers.
+
+
+input -------> size and an array
+con ---------> If given an empty array, return an empty array and 0 is not positive.
+output ------> two space seperated int values.
+
++ve element ----> count
+-ve element ----> sum
+
+print count
+print sum
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+sum=0
+count=0
+for i in L:
+    if i>0:
+        count=count+1
+    else:
+        sum=sum+i
+if n!=0:
+    print(count,sum,sep=' ')
+else:
+    print(' ')
+
+LBP147
+
+Return the Sum of the Two Smallest Numbers
+
+Create a function that takes an array of numbers and returns the sum of the two lowest positive numbers.
+
+input -------> size and an array
+con ---------> Dn't count negative numbers
+output ------> sum of two smallest positive numbers
+
+logic:
+
+1. sort the elements in array
+2. a1,a2,a3,....,an
+3.
+   if a[i]>=0
+   {
+       print(a[i]+a[i+1])
+       break
+   }
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+for i in range(0,n):
+    if L[i]>=0:
+        print(L[i]+L[i+1])
+        break
+
+
+LBP148
+
+Retrieve the Last N Elements
+
+Write a function that retrieves the last n elements from an array.
+
+input -------> size, an array and N value
+con ---------> return 0 if n exceeds size of the array
+output ------> last N elements
+
+5
+1 2 3 4 5
+0 1 2 3 4
+
+3 ----> 3 4 5  ----> 5-3=2
+2 ----> 4 5    ----> 5-2=3
+8 ----> 0 
+
+n<m we can print
+else print 0
+
+for(i=n-m;i<n;i++) print a[i]
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+m=int(input())
+if m<n:
+    for i in range(n-m,n):
+        print(L[i],end=' ')
+else:
+    print(0)
+
+LBP149
+
+Mini Peaks
+
+Write a function that returns all the elements in an array that are strictly greater than their adjacent left and right neighbors.
+
+input ------> size, an array
+con---------> Do not count boundary numbers, since they only have one left/right neighbor.
+output -----> an array
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in range(1,n-1):
+    if L[i]>L[i-1] and L[i]>L[i+1]:
+        print(L[i],end=' ')
+
+LBP150
+
+All Numbers In Array Are Prime
+
+Create a function thats takes an array of integers and returns true if every number is prime. Otherwise, return false.
+
+input -------> size and an array
+con ---------> 1 is not a prime number.
+output ------> true or false
+
+logic:
+if all elements are prime count==n
+
+
+python implementation:
+----------------------
+def isprime(n):
+    f=0
+    for i in range(1,n+1):
+        if n%i==0:
+            f=f+1
+    return f==2
+n=int(input())
+L=[int(i) for i in input().split()]
+c=0
+for i in L:
+    if isprime(i):
+        c=c+1
+print('true' if c==n else 'false')
+
+LBP151
+
+Sum of adjacent Distances
+
+Write a program to calculate and return sum of distances between 
+the adjacent numbers in an array of +ve integers.
+
+input -------> size and array elements
+con ---------> no
+output ------> an int value
+
+
+logic:
+
+5
+10 11 7 12 14
+
+10-11=-1
+11-7=4
+7-12=5
+12-14=2
+
+1+4+5+2=12
+
+sum=0;
+for(i=0;i<n-1;i++)
+{
+	sum=sum+abs(a[i]-a[i+1]);
+}
+
+print sum
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+sum=0
+for i in range(0,n-1):
+    sum=sum+abs(L[i]-L[i+1])
+print(sum)
+
+LBP152
+
+Odd Even Online Game
+
+You are playing an online game. In the game, a list of N numbers is given. 
+The player has to arrange the numbers so that all the odd numbers of the list come 
+after even numbers. Write an algorithm to arrange 
+the given list such that all the odd numbers of the list come after the even numbers.
+
+input -------> size and array elements
+con ---------> no
+output ------> all even numbers and odd numbers.
+
+logic:
+
+array elements
+
+print even elements
+print odd elements
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in L:
+    if i%2==0:
+        print(i,end=' ')
+for i in L:
+    if i%2!=0:
+        print(i,end=' ')
+
+
+LBP153
+
+GARMENTS COMPANY APPAREL
+
+The garments company apparel wishes to open outlets at various locations. 
+The company shortlisted several plots in these locations and wishes to select 
+only plots that are square shaped. 
+Write an algorithm to help Apparel find the number of plots that it can select for its outlets.
+
+input -----> the first line of i/p consists of an integer N, and A1,A2,...AN representing areas of outlets.
+output ----> print an integer representing the number of plots that will be selected for outlets.
+
+logic:
+
+5
+12 13 14 15 16 ====> 1
+
+4
+1 2 3 4 ====> 2
+
+6
+25 26 35 36 49 50 ===> 3
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+c=0
+for i in L:
+    for j in range(1,i+1):
+        if j*j==i:
+            c=c+1
+print(c)
+
+LBP154
+
+POOLED CAB SERVICE
+
+A compnay wishes to provide can service for their N employees. The employees have distance ranging from 0 to N-1. The company has calculated the total distance from an employee's residence to the company, considering the path to be followed by the cab is a straight path. The distance of the company from it self is 0. The distance for the employees who live to the left side of the company is represented with a negative sign. The distance for the employees who live to the right side of the company is represented with a positive sign. the cab will be allotted a range of distance. The company wishes to find the distance for the employees who live within the particular distance range.
+write a alogrithm to find the distance for the employees who live within the distance range.
+
+input ----> size of the list N ,SD,ED and an array of distance
+output ---> distance within the range else -1
+con ------> con
+
+
+python implementation:
+----------------------
+n=int(input())
+d1,d2=(int(i) for i in input().split())
+L=[int(i) for i in input().split()]
+for i in L:
+    if abs(i)>=d1 and abs(i)<=d2:
+        print(i,end=' ')
+
+LBP155
+
+Kth SHORTEST PROCESSING QUEUE
+
+A company wishes to modify the technique by which tasks in the processing queue are executed. There are N processes with unique ID's from 0 to N-1. Each of these tasks has its own execution time. The company wishes to implement a new algorithm for processing tasks. for this purpose they have identified a value K by the new algorithm, the processor will first process the task that has the Kth shortest execution time.
+
+Write an algorithm to find the Kth shortest execution time.
+
+input ----> array size, k value and array
+output ---> kth shortest execution time.
+
+logic:
+
+sort the array and then print a[k-1]
+
+
+python implementation:
+----------------------
+n=int(input())
+k=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+print(L[k-1])
+
+LBP156
+
+INDEX FILTERNING
+
+Create a function that takes two inputs: idx (an array of integers) and str (a string).
+The function should return another string with the letters of str at each index in idx in order.
+
+input ----------> a string followed by size and an array
+constraint -----> output must be in lower case but input many not be.
+output ---------> a string contained in the specified locations given in the array.
+
+
+logic:
+She is the love of my love
+3
+7 11 14
+
+tle
+
+for(i=0;i<n;i++)
+{
+	printf("%c",s[a[i]]);//s[7] s[11] s[14]
+}
+
+
+python implementation:
+----------------------
+s=input()
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in L:
+    print(s[i],end='')
+
+LBP157
+
+SEVEN BOOM!
+
+Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
+
+input ---------> an array from the user
+constraint ----> no
+output --------> Boom! or "there is no 7 in the array".
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[i for i in input().split()]
+flag=False
+for i in L:
+    if '7' in i:
+        flag=True
+        break
+print("Boom!" if flag else "there is no 7 in the array")
+
+
+
+LBP158
+
+Positives and Negatives
+
+Create a function which validates whether a given array alternates between 
+positive and negative numbers.
+
+input --------------> an array size and array
+con ----------------> no
+output -------------> true or false
+
+10 -11 12 -13 14 -----> true
+10 -11 12 -13 -14 ----> false
+
+logic:
+------
+flag=1 (true)
+
+for(i=0;i<n-1;i++)
+{
+	if(a[i]>0 && a[i+1]>0)
+	{
+		flag=0;
+		break;
+	}
+	if(a[i]<0 && a[i+1]<0)
+	{
+		flag=0;
+		break;
+	}
+}
+
+flag==1 then true else false
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+flag=True
+for i in range(n-1):
+    if L[i]>0 and L[i+1]>0:
+        flag=False
+        break
+    if L[i]<0 and L[i+1]<0:
+        flag=True
+        break
+print('true' if flag else 'false')
+
+LBP159
+
+Check if All Values Are True
+
+Write a function that returns true if all parameters are truthy, and false otherwise
+
+input --------------> an array size and array
+con ----------------> no
+output -------------> true or false
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+flag=True
+for i in L:
+    if i==0:
+        flag=False
+        break
+print('true' if flag else 'false')
+
+
+10 0 11 12 0
+
+flag=0 --> 10!=0, 
+
+LBP160
+
+Shared Digits
+
+Create a function that returns true if each pair of adjacent numbers in an array shares at least one digit and false otherwise.
+
+input --------> array size and array elements
+con ----------> no
+output -------> true or false
+
+124, 452, 589, 888	true
+124, 333, 589, 888	false
+
+
+python implementation:
+---------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+c=0
+for i in range(n-1):
+    x=L[i]
+    while x!=0:
+        if str(x%10) in str(L[i+1]):
+            c=c+1
+            break
+        x=x//10
+print('true' if c==n-1 else 'false')
+
+LBP161
+
+Combined Consecutive Sequence
+
+Write a function that returns true if two arrays, when combined, form a consecutive sequence. 
+A consecutive sequence is a sequence without any gaps in the integers, 
+e.g. 1, 2, 3, 4, 5 is a consecutive sequence, but 1, 2, 4, 5 is not.
+
+
+input --------> two array sizes and array elements
+con ----------> no
+output -------> true or false
+
+
+python implementation:
+----------------------
+n1=int(input())
+L1=[int(i) for i in input().split()]
+n2=int(input())
+L2=[int(i) for i in input().split()]
+L3=L1+L2
+L3.sort()
+count=0
+for i in range((n1+n2)-1):
+    if L3[i]+1==L3[i+1]:
+        count=count+1
+print('true' if count==(n1+n2)-1 else 'false')
+
+LBP162
+
+Count 5s And Win
+
+Arun is obsessed with primes, especially five. He considers a number to be luckiest if it has the highest number of five in it. If two numbers have the same frequency of five, Arun considers the last occurence of them to be luckiest, and if there is no five in any number, the first given number is considered luckiest. Help him choose the luckiest number.
+
+input -----------> array size and elements
+con -------------> no
+output ----------> return luckiest number
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+c=0
+cc=0
+for i in L:
+    x=str(i).count('5')
+    if c<=x:
+        c=x
+        element=i
+    if x==0:
+        cc=cc+1
+if cc==n:
+    print(L[0])
+else:
+    print(element)
+
+LBP163
+
+Find the Single Number
+
+Write a function that accepts an array of numbers (where each number appears three times except for one which appears only once) and finds that unique number in the array and returns it.
+
+input -----------> array size and elements
+con -------------> no
+output ----------> return non-repeated number
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+t=0
+for i in L:
+    t=L.count(i)
+    if t==1:
+        print(i)
+
+LBP164
+
+Update Every Element
+
+Implement a progra to update every array element with multiplication of previous and next numbers in array.
+
+input -----> size and array elements
+con--------> no
+output ----> updated array
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+print(L[1],end=' ')
+for i in range(1,n-1):
+    print(L[i-1]*L[i+1],end=' ')
+print(L[-2])
+
+LBP165
+
+Third Largest and Second smallest 
+
+Given an integer array and an integer N denoting the array length as input. your task is to return the sum of third largest and second minimum elements of the array.
+
+input ------> array size and array elements
+con --------> no
+output -----> an int value
+
+logic:
+
+sort the array
+
+a[n-3]+a[2-1]
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+print(L[n-3]+L[2-1])
+
+LBP166
+
+Sales Report
+
+a company has a sales record of N products for M days. 
+The company wishes to know the maximum revenue received from a given product of the 
+N products each day. Write an algorithm to find the higest revenue received each day.
+
+input -----> space seperated integers N and M.
+con -------> no
+output ----> M space seperated integers representing the maximum received each day.
+
+
+python implementation:
+----------------------
+n,m=(int(i) for i in input().split())
+for i in range(n):
+    L=[int(i) for i in input().split()]
+    print(max(L),end=' ')
+
+LBP167
+
+Online Game
+
+You are playing an online game. In the game, a numbers is displayed on the screen. 
+In order to win the game, you have to count the trailing zeros in the factorial value 
+of the given number. W
+rite an algorithm to count the trailing zeros in the factorial value of the given number.
+
+input ------> an integer num, representing the number displayed on the screen.
+con---------> no
+output -----> the count of trailing zeros in the factorial of the given number.
+
+
+python implementation
+---------------------
+import math
+def count(n):
+    c=0
+    while n!=0:
+        if n%10==0:
+            c=c+1
+        else:
+            break
+        n=n//10
+    return c
+
+n=int(input())
+print(count(math.factorial(n)))
+
+LBP168
+
+Array pliandrome
+
+Implement a program to check whether an array is paliandrome or not.
+
+input -----> Array size N and Array Elements
+con -------> no
+output ----> true or false
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+print('true' if L==L[::-1] else 'false')
+
+
+LBP169
+
+Array to Matrix
+
+Implement a program to convert an array into matrix.
+
+input -----> array size and elements
+con -------> element count should be 1,4,9,16,25 and so on
+output ----> matrix
+
+1 2 3 4
+1 2 3 4 5 6 7 8 9
+
+
+python implementation:
+----------------------
+import math
+n=int(input())
+L=[int(i) for i in input().split()]
+m=math.isqrt(n)
+k=0
+for i in range(m):
+    for j in range(m):
+        print(L[k],end=' ')
+        k=k+1
+    print()
+
+
+LBP170
+
+Matrix to Array
+
+Implement a program to convert the given matrix into array
+
+input -----> matrix of size mxn and elements
+con -------> one D array is required
+output ----> one-D array should be printed on screen
+
+
+python implementation:
+----------------------
+n,m=(int(i) for i in input().split())
+L=[]
+for i in range(n):
+    L.append([int(i) for i in input().split()])
+for i in range(n):
+    for j in range(m):
+        print(L[i][j],end=' ')
+
+    
+LBP171
+
+Word Key
+
+One programming language has the following keywords that cannot be used as identifiers. 
+break,case,continue,default,defer,else,for,func,goto,if,map,range,return,struct,type,var
+
+write a program to find if the given word is a keyword or not.
+
+input ------> string from the user
+con --------> con
+output -----> true or false
+
+break ----> true
+class ----> false
+
+
+python implementation:
+----------------------
+L=["break","case","continue","default","defer","else","for","func","goto","if","map","range","return","struct","type","var"]
+s=input()
+print('true' if s in L else 'false')
+
+
+LBP172
+
+Oddly Even
+
+Given a maximum of 100 digit numbers as input, 
+find the difference between the sum of odd and even position digits.
+
+input ------> a number from the user
+con --------> no
+output -----> an integer
+
+Ex:
+45712
+01234
+
+4+7+2=13
+5+1=6
+
+13-6=7
+
+45712==>21754
+        43210
+
+
+python implementation:
+----------------------
+n=input()
+n=int(n[::-1])
+L=[]
+while n!=0:
+    L.append(n%10)
+    n=n//10
+index=0
+se=0
+so=0
+while index<len(L):
+    if index%2==0:
+        se=se+L[index]
+    else:
+        so=so+L[index]
+    index=index+1
+print(so-se)
+
+
+
+LBP173
+
+Sweet Seventeen
+
+Given a maximum of four digit to the base 17(10=>A,11=>B,12=>C,13=>D,14=>E,15=>F,16=>G) as input, output its decimal value.
+
+input -------> a string value
+con----------> no
+output ------> an integer value 
+
+bin---->dec
+oct---->dec
+hexa--->dec ----> 16 to 10
+xxx --->dec ----> 17 to 10
+
+ABC=3089
+
+Cx17^0 + Bx17^1 + Ax17^2
+12x1 + 11x17 + 10x289
+12+187+2890
+
+3089
+
+python implementation:
+----------------------
+n=int(input(),17)
+print(n)
+
+LBP174
+
+BeautifyMe
+
+The cosmetic company "BeauityMe" wishes to know the alphabetic product code from the product barcode. The barcode of the product is a numeric value and the alphabeitc product is a string value tagged 'a-j'. The alphabetic range 'a-j' represents the numeric range '0-9'. To produce the alphabetic product code. each digit in the numeric barcode is replace by the corresponding matching letters.
+
+Write an algorithm to display the alphabetic product code from the numeric barcodes.
+
+input ------> an integer value
+con --------> no
+output -----> a character 
+
+a-j ==> 0-9
+
+abc ---> 012
+
+s[i]-97
+97-97=0
+98-97=1
+99-97=2
+
+
+python implementation:
+----------------------
+s=input()
+for i in s:
+    print(ord(i)-97,end='')
+
+
+LBP175
+
+Print Prime Numbers
+
+Implement a program to read a number and print prime numbers upto n seperated by commas.
+
+input ----> a number from the user
+con ------> no
+output ---> comma seperated prime numbers
+
+python implementation:
+----------------------
+def isprime(n):
+    f=0
+    for i in range(1,n+1):
+        if n%i==0:
+            f=f+1
+    return f==2
+
+n=int(input())
+for i in range(2,n+1):
+    if isprime(i):
+        print(i,end=' ')
+
+LBP176
+
+GCD of two numbers
+
+Implement a program to read two integers values and return GCD of two numbers.
+
+input -----> two space seperated integers.
+con -------> no
+output ----> GCD of two numbers.
+
+
+python implementation:
+----------------------
+import math
+n1,n2=(int(i) for i in input().split())
+print(math.gcd(n1,n2))
+
+LBP177
+
+secret information
+
+A spy wants to send some secret information to the government. As the data is very important, he encrypts the message by encoding by adding some extra characters. the original message has only upper case letters and numbers, while the extra characters are madeup of lowercase letters and special characters. Can you help the receiver in designing a program that accepts the message and returns the secret information.
+
+input ------> a string from the user
+con --------> no
+output -----> original message
+
+
+python implementation:
+----------------------
+s=input()
+for i in s:
+    if (i>='A' and i<'Z') or i.isdigit():
+        print(i,end='')
+
+
+LBP178
+
+flight
+
+amir is travelling to mumbai, but this time he is taking flight. His brother has already told him about luggage weight limits but forgot it. Now he is taking with him 3 trolly bags.
+
+As per the current airlines which amir will fly. has below weight limits.
+
+There can be at max 2 check-in and 1 cabin luggage. Check-in has total limit of L1 and Cabin has limit of L2.
+
+Now, amir has 3 luggage has weights as W1 and W2 and W3 respectively. Now he should be smart enough to make sure that he can travel with all the 3 luggage without paying extra charge.
+
+Find out whether amir can take all of his luggage without any extra charges or not. If all good and no extra changes were paid, output "Yes" otherwise "No".
+
+input ------> integers W1,W2,W3 and L1,L2
+con --------> no
+output -----> Yes or No
+
+w1+w2+w3 <= L1+L2
+
+
+python implementation:
+----------------------
+w1,w2,w3,l1,l2=(int(i) for i in input().split())
+print("Yes" if w1+w2+w3<=l1+l2 else "No")
+
+LBP179
+
+arrangement
+
+given an array of size n, write a function to rearrange the numbers of the array in such that even and odd numbers are arranged alternatively in increasing order.
+
+input -----> array size n and elements
+con -------> no
+output ----> updated array
+
+n=5
+a=4 1 3 5 2 ---> 1 2 3 4 5 --> 2,4 and 1,3,5 ---> 2,1,4,3,x,5
+
+logic:
+
+read array
+sort the array
+copy even elements into one array
+copy odd elements into another array
+
+read element from both arrays and print
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+L1=[]
+L2=[]
+for i in L:
+    if i%2==0:
+        L1.append(i)
+    else:
+        L2.append(i)
+i=0
+while i<n/2:
+    print(L1[i],L2[i],end=' ')
+    i=i+1
+
+LBP180
+
+parity bits
+
+Michael wants to check the parity of the given number. To find the parity, follow below steps.
+
+1. convert decimal number into binary number.
+2. count the number of 1's and 0's in the binary representation.
+
+if it contains odd number of 1-bits, then it is "odd parity" and if contains even number of 1-bits then "even parity" 
+Write a program to validate the given number belongs to odd parity or even parity.
+
+input -------> a number from the user.
+con ---------> no
+output ------> odd parity or even parity.
+
+logic:
+
+convert n into binary
+while coverting count number of 1's
+if c is even print even parity else odd parity
+
+python implementation:
+----------------------
+n=int(input())
+s=str(bin(n))
+print('even' if s.count('1')%2==0 else 'odd')
+
+LBP181
+
+second non-repeating character
+
+sofia loved to play with the programs unfortunately. she got stuck in one of the questions. she tought to take help of james. james asked her the problem statement. The problem statement was.
+
+"for the given string S of length N consist of stream of character not in predefined order. Write a program to find second non-repeating character in a string S. Write a program to help sofia and james for the given problem statements.
+
+input ------> string from the user
+con --------> no
+outptu -----> single character
+
+logic:
+
+welcome ---> wlcm --> l
+india -----> nda ---> d
+indian ----> da ----> a
+
+python implementation:
+----------------------
+s=input()
+L=[]
+for i in s:
+    if s.count(i)==1:
+        L.append(i)
+print(L[1])
+
+LBP182
+
+absolute difference between prime numbers
+
+You are given an array of integers, N of size array length. 
+Find the absolute difference (i.e. diff>=0) between the largest and smallest prime numbers.
+
+Note:
+	1. if there are 1 or fewer prime numbers in array return 0.
+	2. the array may contain +ve and -ve numbers, ignore -ve numbers.
+	3. 1 and 0 are not prime.
+
+input ------> array size and array elements
+con --------> no
+output -----> absolute diff
+
+
+python implementation:
+----------------------
+def isprime(n):
+    f=0
+    for i in range(1,n+1):
+        if n%i==0:
+            f=f+1
+    return f==2
+
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+min=999
+max=-1
+for i in L:
+    if isprime(i):
+        if min>i:
+            min=i
+        if max<i:
+            max=i
+if max!=-1 and min!=999:
+    print(max-min)
+else:
+    print(0)
+        
+
+LBP183
+
+product with successor
+
+Given an integer N and integer array A as the input, where N denotes the length of A 
+write a program to find an integer the sum of all these product with successors.
+
+
+input ----> array size and elements
+con-------> no
+output ---> an int value
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+sum=0
+for i in L:
+    sum=sum+(i*(i+1))
+print(sum)
+
+
+LBP184
+
+pre-sorted integers in array
+
+You are given an array of integers, a of size n, Your task is to find the number of elements whose positions will remain unchanged after sorted in ascending order.
+
+input ----> array size and elements
+con ------> no
+output ---> unchanged count
+
+a=[1,3,2,4,5]
+a=[1,2,3,4,5]
+
+3
+
+
+python implementation:
+----------------------
+n=int(input())
+L1=[int(i) for i in input().split()]
+L2=L1.copy()
+L2.sort()
+c=0
+for i in range(n):
+    if L1[i]==L2[i]:
+        c=c+1
+print(c)
+
+
+LBP185
+
+savings
+
+There are 3 friends named Ronaldo,Messi,Rooney who worked at a compnay. Given thier monthly salaries and monthly expendictures, returns the highest saving amoung them.
+
+input ------> single line with 6 space seperated integers.
+con --------> no
+output -----> highest saving amoung the 3 of them
+
+python implementation:
+----------------------
+a1,a2,b1,b2,c1,c2=(int(i) for i in input().split())
+print(max(a1-a2,b1-b2,c1-c2))
+
+LBP186
+
+half ascending and half descending
+
+You are given a list of integers of size N, write an algorithm to sort the first K elements of the list in ascending order and the remaining elements in descending order.
+
+input -----> an arry size and elements
+con -------> no
+output ----> updated array
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+for i in range(0,n//2):
+    print(L[i],end=' ')
+for i in range(n-1,n//2-1,-1):
+    print(L[i],end=' ')
+
+LBP187
+
+last and second-last
+
+Given a string, 
+create a new string made up of its last two letters, reversed and seperated by comma.
+
+input ------> a string from the user
+con --------> no
+output -----> comma seperated last and second-last character
+
+
+
+python implementation:
+----------------------
+s=input()
+print(s[-1],s[-2],sep=',')
+
+
+LBP188
+
+digital root
+
+Write a program to find the digital root of a given number. 
+Digital root is the recursive sum of digits in the given number 
+(until single digit is arrived)
+
+input ----> a number from the user
+con ------> no
+output ---> single digit number
+
+123=1+2+3=6
+159=1+5+9=15=1+5=6
+
+
+python implementation:
+----------------------
+def sum(n):
+    s=0
+    while n!=0:
+        s=s+(n%10)
+        n=n//10
+    return s
+
+n=int(input())
+while True:
+    if n>=0 and n<=9:
+        print(n)
+        break
+    else:
+        n=sum(n)
+
+LBP189
+
+absolute difference
+
+Write a program to find the absolute difference between the original number and its reserved number.
+
+input -----> a number from the user
+con -------> no
+output ----> absolute difference
+
+123-321==>-102---> 102
+
+logic: abs(n-rev(n))
+
+
+python implementation:
+----------------------
+n=input()
+print(abs(int(n)-int(n[::-1])))
+
+LBP190
+
+lucky draw
+
+A person went to an exhibition. A lucky draw is going on, where one should buy a ticket. And if they ticket number appear on the screen, that ticket will be considered as jackpot winner.
+
+he knows the secret of picking up the ticket number, which will be considered for the jackpot.
+
+1. sort the ticket number in the increasing order.
+2. Now, the difference between the adjacent digits should not be more than 2.
+
+If his ticket follows the above condition, then there are more chances to win the jackpot.
+
+Given a ticket number, find whether the ticket is eligible to be part of jackpot or not. Print "Yes/No" based on the result.
+
+input -----> ticket number
+con -------> no
+output ----> Yes or No
+
+Ex:
+
+171---> 117 ---> No
+123 --> 123 ---> Yes
+
+
+Python implementation:
+----------------------
+
+L=[int(i) for i in input()]
+L.sort()
+flag=True
+for i in range(len(L)-1):
+    if L[i+1]-L[i]>2:
+        flag=False
+        break
+        
+print("Yes" if flag==True else "No")
+
+
+LBP191
+
+test paper set
+
+In an online exam, the test paper set is categorized by the letters A-Z. The students enrolled in the exam have been assigned a numeric value called application ID. To assign the test set to the student, firstly the sum of all digits in the application ID is calculated. If the sum is within the numeric range 1-26 the corresponding alphanetic set code is assigned to the student, else the sum of the digits are calcualted again and so on unitil the sum falls within the 1-26 range.
+
+input ------> application id as int
+con --------> no
+output -----> set number
+
+A=1
+B=2
+C=3
+D=4
+E=5
+F=6
+123==> 1+2+3=6 ---> F
+
+786=7+8+6=21 ----> U
+
+
+python implementation:
+----------------------
+def sum(n):
+    s=0
+    while n!=0:
+        s=s+(n%10)
+        n=n//10
+    return s
+
+n=int(input())
+while True:
+    if n>=1 and n<=26:
+        print(chr(64+n))
+        break
+    else:
+        n=sum(n)
+
+
+LBP192
+
+digits raised to the third power
+
+Cristina appeared for a corporate Hackathon. She cleated first round of this and would like to take next challenge which is coding round. The problem statement comes to her is
+
+"Write a program to find numbers which are in between integer 2 and integer N and such that the sum of its digits raised to the third power is equal to the number with the input given.
+
+input ----> integer N
+con ------> no
+output ---> an integer value
+
+armstrong number
+
+123 = 1^3+2^3+3^3=1+8+27=36
+153 = 1^3+5^3+3^3=1+125+27=153
+
+
+python implementation:
+----------------------
+def sum(n):
+    s=0
+    while n!=0:
+        d=n%10
+        s=s+d**3
+        n=n//10
+    return s
+
+n=int(input())
+for i in range(2,n+1):
+    if i==sum(i):
+        print(i,end=' ')
+
+
+LBP193
+
+Grocery Shop
+
+There was a grocery shop. Shopkeeper would like to keep trasactions as simple as he can. Hence, he used to take money as whole number. To optimize trasactions, he decided if someone buys groceries from his shop, he will round money to the nearest whole number having zeros as last digit. Write a program to help shopkeeper to make trasactions much simple.
+
+input -----> a number
+con -------> no
+output ----> nearest int value which ending with 0
+
+
+python implementation:
+----------------------
+n=int(input())
+while True:
+    if n%10==0:
+        print(n)
+        break
+    else:
+        n=n+1
+
+LBP194
+
+Password change
+
+Prakash a technical person wants to update his password for every 15 days, to create a new password, he is converting all lower case letters to upper case and upper case letters to lower case, help prakash to update password. 
+
+input ------> a string from the user old password
+con --------> no
+output -----> updated password
+
+
+python implementation:
+----------------------
+print(input().swapcase())
+
+LBP195
+
+Video share
+
+Video share is an online video sharing platform. The company has decided to rate its users channels based on the sum total of the number of views received online and the subscribers. This sum total is referred to as user points. The rating will be given according to the below charts.
+
+User points	rating
+30-50		Average
+51-60		Good
+61-80		Excellent
+81-100		Outstanding
+
+input ------> points value
+con --------> points>=30 and points<=100
+output -----> rating
+
+
+python implementation:
+----------------------
+n=int(input())
+if n>=30 and n<=50:
+    print("Average")
+elif n>=51 and n<=60:
+    print("Good")
+elif n>=61 and n<=80:
+    print("Excellent")
+else:
+    print("Outstanding")
+
+LBP196
+
+modular exponentiation
+
+Given three numbers b,e, and m. 
+fill in a function that takes these three positive integer values and outputs b^e mod m.
+
+input ------> b,e and m values
+con --------> no
+output -----> b^e mod m
+
+formula: (b^e)%m
+
+
+python implementation:
+----------------------
+b,e,m=(int(i) for i in input().split())
+print(b**e%m)
+
+LBP197
+
+Backspace String Compare
+
+Two strings are said to the same if they are of the same length and have the same character at each index. Backspacing in a string removes the previous character in the string.
+
+Given two strings containing lowercase english letters and the character '#' which represents a backspace key. determine if the two final strings are equal or not. Return 1 if they are equal else 0.
+
+input -----> two strings s1 and s2
+con -------> no
+output ----> 1 or 0
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+python implementation:
+----------------------
+s1=input()
+s2=input()
+l1=[]
+l2=[]
+for i in range(len(s1)-1):
+    if s1[i]!='#' and s1[i+1]!='#':
+        l1.append(s1[i])
+for i in range(len(s2)-1):
+    if s2[i]!='#' and s2[i+1]!='#':
+        l2.append(s2[i])        
+print(1 if ''.join(l1)==''.join(l2) else 0)
+
+
+L=[10,20,30]
+''.join(L) ---->102030
+'-'.join(L) ---> 10-20-30
+
+
+LBP198
+
+token number
+
+Write an algorithm to generate the token number from the application ID by doing this modifications.
+
+R1. If the digit is even add 1 to it.
+R2. If the digit is odd sub 1 from it.
+
+
+input -----> a number from the user
+con--------> no
+output ----> token number
+
+45789==> 54698
+98754==> 
+
+
+python implementation:
+----------------------
+n=int(input()[::-1])
+while n!=0:
+    d=n%10
+    if d%2==0:
+        print(d+1,end='')
+    else:
+        print(d-1,end='')
+    n=n//10
+
+LBP199
+
+score of the player
+
+a game developing company has developed a math game for kids called "Brain Fun". The game is for smartphone users and the player is given list of N positive numbers and a random number K. the player need to divide all the numbers in the list with random number k and then need to add all the quotients received in each division. the sum of all the quotients is the score of the player.
+
+Write an algorithm to generate the score of the player.
+
+input -----> array size, elements and random number k
+con -------> no
+output ----> an int value
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+k=int(input())
+s=0
+for i in L:
+    s=s+i//k
+print(s)
+
+LBP200
+
+Perfect Math
+
+Perfect math is an online math program. In once of the assignments the system displays a list of N number and a value K, and students need to calculate the sum of remainders after dividing all the numbers from the list of N numbers by K. The system need to develop a program to calcualte the correct answer for the assignment.
+
+Write an algorithm to calcualte the correct answer for the assignment.
+
+input -----> size N and N elements and K value
+con -------> no
+output ----> an int value.
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+k=int(input())
+s=0
+for i in L:
+    s=s+i%k
+print(s)
+
+
+https://www.hackerrank.com/matrixtest
+
+
+1 2 3
+4 5 6
+7 8 9
+
+order of matrix: 3x3
+3 rows
+3 cols
+
+1 2 3 4
+5 6 7 8
+
+order of matrix: 2x4
+
+10
+
+order of matrix: 1x1
+
+int a[10];
+int a[10][10];
+
+int a[][] = new int[5][5];
+
+List only ===> nested list
+
+[[1,2,3],[4,5,6],[7,8,9]]
+
+
+1 2 3
+4 5 6
+7 8 9
+
+1 2 3
+4
+7 8
+
+array of arrays
+nested list 
+
+int a[] = new int[rows];
+int a[] = new int[3];
+a[0] = new int[3];
+a[1] = new int[1];
+a[2] = new int[2];
+
+L=[[x,x,x],[x],[x,x]]
+
+Hear of this entire matrix is rows x columns
+
+very very imp elements are 1) rows ---> n  ---> 3
+                           2) cols ---> m  ---> 3
+
+
+
+
+int a[5];
+
+for(i=0;i<5;i++)
+{
+	a[i]
+}
+
+
+int a[5][5];
+
+for(i=0;i<5;i++)
+{
+	for(j=0;j<5;j++)
+	{
+		a[i][j]
+	}
+}
+
+Ex:
+int a[3][2];
+
+for(i=0;i<3;i++) //3 times
+{
+	for(j=0;j<2;j++) //2 times
+	{
+		a[i][j]
+	}
+}
+
+i=0 ====> j=0,j=1
+i=1 ====> j=0,j=1
+i=2 ====> j=0,j=1
+
+(0,0) (0,1)
+(1,0) (1,1)
+(2,0) (2,1)
+
+LBP201
+
+read and write matrix elements
+
+Write a program to read matrix and display on the console.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> a 3x3 matrix
+
+
+python implementation:
+----------------------
+
+n=int(input())
+m=int(input())
+a=[]
+for i in range(n):
+    a.append([int(i) for i in input().split()])
+for i in range(n):
+    for j in range(m):
+        print(a[i][j],end=' ')
+    print()
+              
+[[1,2,3],
+[4,5,6],
+[7,8,9]]
+
+1 2 3 ==> '1 2 3' ==> '1', '2', '3' ===> [1,2,3]
+4 5 6
+7 8 9
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+for i in range(n):
+    a.append([int(i) for i in input().split()])
+
+for i in range(n):
+    b=[]
+    for j in range(m):
+         b.append(int(input()))
+    a.append(b)
+
+
+"1 2 3".split() ===> 1,2,3
+"hi hello how are you".split() ===> hi,hello,how,are,you
+
+
+
+LBP202
+
+sum of all matrix elements
+
+Write a program to find sum of all elements in the matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> sum of all elements
+
+
+
+python implementation:
+----------------------
+n=int(input())
+m=int(input())
+a=[]
+for i in range(n):
+    a.append([int(i) for i in input().split()])
+s=0    
+for i in range(n):
+    for j in range(m):
+        s=s+a[i][j]
+print(s)
+
+LBP203
+
+sum of all even elements
+
+Write a program to find sum of all even elements in the matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> sum of all even elements
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+s=0    
+for i in range(3):
+    for j in range(3):
+        if a[i][j]%2==0:
+            s=s+a[i][j]
+print(s)
+
+
+LBP204
+
+sum of all odd elements
+
+Write a program to find sum of all odd elements in the matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> sum of all odd elements
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+s=0    
+for i in range(3):
+    for j in range(3):
+        if a[i][j]%2!=0:
+            s=s+a[i][j]
+print(s)
+
+
+LBP205
+
+sum of all prime elements
+
+Write a program to find sum of all prime elements in the matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> sum of all prime elements
+
+
+
+python implementation:
+----------------------
+def isprime(n):
+    f=0
+    for i in range(1,n+1):
+        if n%i==0:
+            f=f+1
+    return f==2
+
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+s=0    
+for i in range(3):
+    for j in range(3):
+        if isprime(a[i][j]):
+            s=s+a[i][j]
+print(s)
+
+LBP206
+
+row wise sum in matrix
+
+Write a program to find row wise sum in the matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> sum of each row
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+  
+for i in range(3):
+    s=0  
+    for j in range(3):
+            s=s+a[i][j]
+	print(s)
+
+
+LBP207
+
+column wise sum in matrix
+
+Write a program to find column wise sum in the matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> sum of each column
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+  
+for i in range(3):
+    s=0  
+    for j in range(3):
+            s=s+a[j][i]
+	print(s)
+
+
+LBP208
+
+sum of diagonal elements in matrix
+
+Write a program to find sum of diagonal elements in matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> sum of diagonal elements
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+s=0    
+for i in range(3):
+    for j in range(3):
+        if i==j:
+            s=s+a[i][j]
+print(s)
+
+
+LBP209
+
+sum of opposite diagonal elements in matrix
+
+Write a program to find sum of opposite diagonal elements in matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> sum of opposite diagonal elements
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+s=0    
+for i in range(3):
+         s=s+a[i][3-i-1]
+print(s)
+
+LBP210
+
+sum of first and last element in the matrix
+
+Write a program to find sum of first and last element in a matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> sum of first and last element in matrix
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+s=0    
+print(a[0][0]+a[2][2])
+
+
+LBP211
+
+find the product of diagonal matrix
+
+Write a program to find the product of diagonal matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> find the product of diagonal matrix
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+s=1    
+for i in range(3):
+    for j in range(3):
+        if i==j:
+            s=s*a[i][j]
+print(s)
+
+
+LBP212
+
+find the product of opposite diagonal matrix
+
+Write a program to find the product of opposite diagonal matrix.
+
+input --------> a 3x3 matrix
+constriants --> no
+output -------> find the product of opposite diagonal matrix
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+s=1    
+for i in range(3):
+         s=s*a[i][3-i-1]
+print(s)
+
+
+
+LBP213
+
+max element in matrix
+
+Implement a program to print max element in an matrix
+
+input -----> a 3x3 matrix
+constraint-> no
+output ----> max element in matrix
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+max=a[0][0]
+for i in range(3):
+    for j in range(3):
+        if max<a[i][j]:
+            max=a[i][j]
+print(max)
+
+
+LBP214
+
+min element in matrix
+
+Implement a program to print min element in an matrix
+
+input -----> a 3x3 matrix
+constraint-> no
+output ----> min element in matrix
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+min=a[0][0]
+for i in range(3):
+    for j in range(3):
+        if min>a[i][j]:
+            min=a[i][j]
+print(min)
+
+
+LBP215
+
+max element in each row of a matrix
+
+Implement a program to print max element in each row of a matrix
+
+
+input -----> a 3x3 matrix
+constraint-> no
+output ----> print max element in each row of a matrix
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+for i in range(3):
+    max=a[i][0]
+    for j in range(3):
+        if max<a[i][j]:
+            max=a[i][j]
+    print(max)
+
+
+LBP216
+
+min element in each row of a matrix
+
+Implement a program to print min element in each row of a matrix
+
+
+input -----> a 3x3 matrix
+constraint-> no
+output ----> print min element in each row of a matrix
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+for i in range(3):
+    min=a[i][0]
+    for j in range(3):
+        if min>a[i][j]:
+            min=a[i][j]
+    print(min)
+
+
+LBP217
+
+transpose of the given matrix
+
+Implement a program to print transpose of a matrix
+
+
+input -----> a 3x3 matrix
+constraint-> no
+output ----> print transpose of the matrix
+
+
+python implementation:
+---------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+for i in range(3):
+    for j in range(3):
+        print(a[j][i],end=' ')
+    print()
+
+LBP218
+
+trace of the given matrix
+
+Implement a program to find trace(sum of diagonal elements) of the given matrix.
+
+
+input -----> a 3x3 matrix
+constraint-> no
+output ----> print trace of the matrix
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+s=0    
+for i in range(3):
+    for j in range(3):
+        if i==j:
+            s=s+a[i][j]
+print(s)
+
+
+LBP219
+
+find the frequency of odd and even 
+
+Write a program to find frequency of odd and even elements in the matrix excluding 0.
+
+input ------> a 3x3 matrix
+constraint -> no
+output -----> odd elements and even elements count
+
+
+python implementation:
+----------------------
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+c1=0#odd
+c2=0#even
+for i in range(3):
+    for j in range(3):
+        if a[i][j]%2==0 and a[i][j]!=0:
+            c2=c2+1
+        if a[i][j]%2!=0:
+            c1=c1+1
+print(c1)
+print(c2)
+
+LBP220
+
+identity matrix
+
+Implement a program to check whether the given matrix is identity matrix or not
+
+input -------> a 3x3 matrix
+constraint --> no
+output ------> Yes or No
+
+
+python implementation:
+----------------------
+flag=True
+a=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+for i in range(3):
+    for j in range(3):
+        if i==j and a[i][j]!=1:
+            flag=False
+            break
+        if i!=j and a[i][j]!=0:
+            flag=False
+            break
+print("Yes" if flag else "No")
+
+LBP221
+
+two matrices are equal or not
+
+Implement a program to check whether the given matrices are equal or not
+
+input -------> a 3x3 matrix
+constraint --> no
+output ------> Yes or No
+
+
+python implementation:
+----------------------
+flag=True
+a=[]
+b=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+for i in range(3):
+    b.append([int(i) for i in input().split()])    
+for i in range(3):
+    for j in range(3):
+        if a[i][j]!=b[i][j]:
+            flag=False
+            break
+print("Yes" if flag else "No")
+
+
+LBP222
+
+addition of two matrices
+
+Write a program to perform addition operation on two matrices
+
+input --------> two 3x3 matrices
+constraint----> no
+output -------> resultent matrix
+
+
+python implementation:
+----------------------
+a=[]
+b=[]
+c=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+for i in range(3):
+    b.append([int(i) for i in input().split()])    
+for i in range(3):
+    cc=[]
+    for j in range(3):
+        cc.append(a[i][j]+b[i][j])
+    c.append(cc)
+for i in range(3):
+    for j in range(3):
+        print(c[i][j],end=' ')
+    print()
+
+
+LBP223
+
+subtraction of two matrices
+
+Write a program to perform subtraction operation on two matrices
+
+input --------> two 3x3 matrices
+constraint----> no
+output -------> resultent matrix
+
+
+python implementation:
+----------------------
+a=[]
+b=[]
+c=[]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+for i in range(3):
+    b.append([int(i) for i in input().split()])    
+for i in range(3):
+    cc=[]
+    for j in range(3):
+        cc.append(a[i][j]-b[i][j])
+    c.append(cc)
+for i in range(3):
+    for j in range(3):
+        print(c[i][j],end=' ')
+    print()
+
+
+
+LBP224 
+
+multiplication of two matrices
+
+Write a program to perform multiplication operation on two matrices
+
+input --------> two 3x3 matrices
+constraint----> no
+output -------> resultent matrix
+
+
+python implementation:
+----------------------
+a=[]
+b=[]
+c=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(3):
+    a.append([int(i) for i in input().split()])
+for i in range(3):
+    b.append([int(i) for i in input().split()])    
+
+
+for i in range(3):
+    for j in range(3):
+        for k in range(3):
+            c[i][j]=c[i][j]+(a[i][k]*b[k][j])
+    
+for i in range(3):
+    for j in range(3):
+        print(c[i][j],end=' ')
+    print()
+
+
+LBP225
+
+sort all the elements in a matrix in asc order
+
+Implement a program to sort all the elements in asc order in the matrix
+
+input -------> a matrix
+cons---------> no
+output ------> result matrix
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+ll=[]
+for i in range(3):
+    for j in range(3):
+        ll.append(l[i][j])
+ll.sort()
+k=0
+for i in range(3):
+    for j in range(3):
+        l[i][j]=ll[k]
+        k=k+1
+for i in range(3):
+    for j in range(3):
+        print(l[i][j],end=' ')
+    print()
+
+LBP226
+
+sort all the elements in a matrix in desc order
+
+Implement a program to sort all the elements in desc in the matrix
+
+input -------> a matrix
+cons---------> no
+output ------> result matrix
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+ll=[]
+for i in range(3):
+    for j in range(3):
+        ll.append(l[i][j])
+ll.sort(reverse=True)
+k=0
+for i in range(3):
+    for j in range(3):
+        l[i][j]=ll[k]
+        k=k+1
+for i in range(3):
+    for j in range(3):
+        print(l[i][j],end=' ')
+    print()
+
+
+LBP227
+
+sort all the elements in a row in asc order
+
+Implement a program to sort all the rowwise elements in asc order
+
+input -------> a matrix
+cons---------> no
+output ------> result matrix
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+for i in range(3):
+    l[i].sort()
+for i in range(3):
+    for j in range(3):
+        print(l[i][j],end=' ')
+    print()
+
+LBP228
+
+sort all the elements in a row in desc order
+
+Implement a program to sort all the row wise elements in desc order
+
+input -------> a matrix
+cons---------> no
+output ------> result matrix
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+for i in range(3):
+    l[i].sort(reverse=True)
+for i in range(3):
+    for j in range(3):
+        print(l[i][j],end=' ')
+    print()
+
+LBP229
+
+sort all the elements in a column in asc order
+
+Implement a program to sort all the column values in asc order
+
+input -------> a matrix
+cons---------> no
+output ------> result matrix
+
+logic:
+
+1. read a matrix from the user
+2. copy the content of a matrix to b matrix like b[i][j]=a[j][i]
+3. apply row wise sorting method
+4. print b[j][i] matrix
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+ll=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(3):
+    for j in range(3):
+        ll[i][j]=l[j][i]
+for i in range(3):
+    ll[i].sort()
+
+for i in range(3):
+    for j in range(3):
+        print(ll[j][i],end=' ')
+    print()
+
+LBP230
+
+sort all the elements in a column in desc order
+
+Implement a program to sort the all the column values in desc order
+
+input -------> a matrix
+cons---------> no
+output ------> result matrix
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+ll=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(3):
+    for j in range(3):
+        ll[i][j]=l[j][i]
+for i in range(3):
+    ll[i].sort(reverse=True)
+
+for i in range(3):
+    for j in range(3):
+        print(ll[j][i],end=' ')
+    print()
+
+LBP231
+
+sparse matrix
+
+Implement a program to check whether the given matrix is sparse matrix or not.
+
+Note: a sparse matrix is a matrix with the majority of its elements equal to zero.
+
+input---------> a matrix
+con ----------> no
+output -------> Yes or No
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+counter=0
+for i in l:
+    counter=counter+i.count(0)
+print("Yes" if counter>=5 else "No")
+
+
+LBP232
+
+swaping of two rows
+
+Implement a program to swap two given rows.
+
+input -------> matrix and m and n values
+con ---------> no
+output ------> modified matrix
+
+0 ==> 11 22 33
+1 ==> 44 55 66
+2 ==> 77 88 99
+
+m=1 and n=2
+m-1 and n-1
+1-1 and 2-1
+0 and 1
+
+0 ==> 44 55 66
+1 ==> 11 22 33
+2 ==> 77 88 99
+
+for i=0,i<3,i++
+
+t=a[m-1][i]
+a[m-1][i]=a[n-1][i]
+a[n-1][i]=t
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+m=int(input())
+n=int(input())
+l=[l1,l2,l3]
+#swaping
+l[m-1],l[n-1]=l[n-1],l[m-1]
+for i in range(3):
+    for j in range(3):
+        print(l[i][j],end=' ')
+    print()
+
+LBP233
+
+swaping of two columns
+
+Implement a program to swap two given columns
+
+input -------> matrix and m and n values
+con ---------> no
+output ------> modified matrix
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+m=int(input())
+n=int(input())
+l=[l1,l2,l3]
+#swaping
+for i in range(3):
+    l[i][m-1],l[i][n-1]=l[i][n-1],l[i][m-1]
+for i in range(3):
+    for j in range(3):
+        print(l[i][j],end=' ')
+    print()
+
+
+LBP234
+
+interchange the diagonals
+
+Program to accept a matrix of order 3x3 & interchange the diagonals.
+
+input -------> a 3x3 matrix 
+con ---------> no
+output ------> modified matrix
+
+i=0 ==> 1 2 3
+i=1 ==> 4 5 6
+i=2 ==> 7 8 9
+
+a[i][i]
+a[i][3-i-1]
+
+diagonal elements ====> a[0][0],a[1][1],a[2][2] ===> 1, 5, 9
+diagonal elements ====> a[0][2],a[1][1],a[2][0] ===> 3, 5, 7
+
+swap a[i][i] and a[i][3-i-1]
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+for i in range(3):
+    l[i][i],l[i][3-i-1]=l[i][3-i-1],l[i][i]
+for i in range(3):
+    for j in range(3):
+        print(l[i][j],end=' ')
+    print()
+
+ 
+
+LBP235
+
+upper triangular matrix
+
+Program to accept a matrix and check whether it is upper triangular matrix or not
+
+input -------> a 3x3 matrix 
+con ---------> no
+output ------> Yes or No
+
+1 2 3
+4 5 6
+7 8 9
+
+No
+
+1 2 3
+0 5 6
+0 0 9
+
+Yes
+
+logic:
+
+(0,0) (0,1) (0,2)
+(1,0) (1,1) (1,2)
+(2,0) (2,1) (2,2)
+
+flag=1;
+
+(1,0),(2,0),(2,1) ===> j<i && a[i][j]!=0
+
+then set flag=0;
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+flag=True
+for i in range(3):
+    for j in range(3):
+        if j<i and l[i][j]!=0:
+            flag=False
+print("Yes" if flag else "No")
+
+
+LBP236
+
+lower triangular matrix
+
+Program to accept a matrix and check whether it is lower triangular matrix or not
+
+input -------> a 3x3 matrix 
+con ---------> no
+output ------> Yes or No
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+flag=True
+for i in range(3):
+    for j in range(3):
+        if j>i and l[i][j]!=0:
+            flag=False
+print("Yes" if flag else "No")
+
+
+LBP237
+
+Scalar matrix multiplication
+
+Implement a program to read a matrix and multiplier and return scalar matrix multiplication.
+
+input -------> a 3x3 matrix and multiplier
+con ---------> no
+output ------> resultent matrix
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+n=int(input())
+for i in range(3):
+    for j in range(3):
+        print(l[i][j]*n,end=' ')
+    print()
+
+
+
+LBP238
+
+Symmetric matrix
+
+Implement a program to read a matrix and check whether the given matrix is symmertric matrix or not
+
+input -------> a 3x3 matrix 
+con ---------> no
+output ------> Yes or No
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+c=0
+for i in range(3):
+    for j in range(3):
+        if l[i][j]==l[j][i]:
+            c=c+1
+print("Yes" if c==9 else "No")
+
+LBP239
+
+print diagonal elements
+
+Implement a program to read a matrix and display only diagonal elements.
+
+input -------> a 3x3 matrix 
+con ---------> no
+output ------> print only diagonal elements
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+for i in range(3):
+    for j in range(3):
+        if i==j:
+            print(l[i][j],end=' ')
+        else:
+            print('  ',end='')
+    print()
+
+LBP240
+
+Square of Each Element of Matrix
+
+Implement a program to find square of each element present in a matrix.
+
+input -------> a 3x3 matrix 
+con ---------> no
+output ------> resultent matrix
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+for i in range(3):
+    for j in range(3):
+        print(l[i][j]*l[i][j],end=' ')
+    print()
+
+LBP241	
+
+Sum of even indexed rows in matrix
+
+Implement a program to find sum of even indexed rows in the given matrix.
+
+input ------> a 3x3 matrix
+con --------> no
+output -----> sum as an int
+
+0 ---> 1 2 3
+1----> 4 5 6
+2 ---> 7 8 9
+
+1+2+3+7+8+9=30
+
+logic
+
+for(i=0;i<3;i++)
+{
+	for(j=0;j<3;j++)
+	{
+		if(i%2==0)
+			s=s+a[i][j];
+	}
+}
+
+print s
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+s=0
+for i in range(3):
+    for j in range(3):
+        if i%2==0:
+            s=s+l[i][j]
+print(s)
+
+LBP242	
+
+Sum of odd indexed rows in matrix
+
+Implement a program to find sum of odd indexed rows in the given matrix.
+
+input ------> a 3x3 matrix
+con --------> no
+output -----> sum as an int
+
+
+0 ---> 1 2 3
+1----> 4 5 6
+2 ---> 7 8 9
+
+4+5+6 = 15
+
+logic
+
+for(i=0;i<3;i++)
+{
+	for(j=0;j<3;j++)
+	{
+		if(i%2!=0)
+			s=s+a[i][j];
+	}
+}
+
+print s
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+s=0
+for i in range(3):
+    for j in range(3):
+        if i%2!=0:
+            s=s+l[i][j]
+print(s)
+
+
+
+LBP243	
+
+Sum of even indexed cols in matrix
+
+Implement a program to find sum of even indexed cols in the given matrix.
+
+input ------> a 3x3 matrix
+con --------> no
+output -----> sum as an int
+
+       0 1 2
+
+0 ---> 1 2 3
+1----> 4 5 6
+2 ---> 7 8 9
+
+1+4+7+3+6+9 =30
+
+logic
+
+for(i=0;i<3;i++)
+{
+	for(j=0;j<3;j++)
+	{
+		if(j%2==0)
+			s=s+a[i][j];
+	}
+}
+
+print s
+
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+s=0
+for i in range(3):
+    for j in range(3):
+        if j%2==0:
+            s=s+l[i][j]
+print(s)
+
+
+
+LBP244	
+
+Sum of odd indexed cols in matrix
+
+Implement a program to find sum of odd indexed cols in the given matrix.
+
+input ------> a 3x3 matrix
+con --------> no
+output -----> sum as an int
+
+
+       0 1 2
+
+0 ---> 1 2 3
+1----> 4 5 6
+2 ---> 7 8 9
+
+2+5+8 =15
+
+logic
+
+for(i=0;i<3;i++)
+{
+	for(j=0;j<3;j++)
+	{
+		if(j%2!=0)
+			s=s+a[i][j];
+	}
+}
+
+print s
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+s=0
+for i in range(3):
+    for j in range(3):
+        if j%2!=0:
+            s=s+l[i][j]
+print(s)
+
+
+
+LBP245	
+
+Sum of elements whose sum of row index and col index is even
+
+Implement a program to find sum of row index and col index is even in the given matrix.
+
+input ------> a 3x3 matrix
+con --------> no
+output -----> sum as an int
+
+formula:  (i+j)%2==0
+
+logic
+
+for(i=0;i<3;i++)
+{
+	for(j=0;j<3;j++)
+	{
+		if((i+j)%2=0)
+			s=s+a[i][j];
+	}
+}
+
+print s
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+s=0
+for i in range(3):
+    for j in range(3):
+        if (i+j)%2==0:
+            s=s+l[i][j]
+print(s)
+
+
+
+LBP246	
+
+Sum of elements whose sum of row index and col index is odd
+
+Implement a program to find sum of row index and col index is odd in the given matrix.
+
+input ------> a 3x3 matrix
+con --------> no
+output -----> sum as an int
+
+
+formula:  (i+j)%2==0
+
+logic
+
+for(i=0;i<3;i++)
+{
+	for(j=0;j<3;j++)
+	{
+		if((i+j)%2=0)
+			s=s+a[i][j];
+	}
+}
+
+print s
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+s=0
+for i in range(3):
+    for j in range(3):
+        if (i+j)%2!=0:
+            s=s+l[i][j]
+print(s)
+
+LBP247	
+
+Sum of prime elements 
+
+Implement a program to find sum of prime elements in the given matrix.
+
+input ------> a 3x3 matrix
+con --------> no
+output -----> sum as an int
+
+LOGIC
+
+s=0;
+for(i=0;i<3;i++)
+{
+	for(j=0;j<3;j++)
+	{
+		if(isprime(a[i][j])
+			s=s+a[i][j];
+	}
+}
+print s
+
+
+python implementation:
+----------------------
+def isprime(n):
+    f=0
+    for i in range(1,n+1):
+        if n%i==0:
+            f=f+1
+    return f==2
+
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+s=0
+for i in range(3):
+    for j in range(3):
+        if isprime(l[i][j]):
+            s=s+l[i][j]
+print(s)
+
+
+
+LBP248	
+
+Count of prime digits in the given matrix
+
+Implement a program to count number of prime digits present in the matrix.
+
+input ------> a 3x3 matrix
+con --------> no
+output -----> prime digits count
+
+
+logic:
+
+count=0;
+
+for(i=0;i<3;i++)
+{
+	for(j=0;j<3;j++)
+	{
+		count=count+countprime(a[i][j]);2
+					123
+	}
+}
+
+int countprime(int n)
+{
+	while(n!=0)
+	{
+		d=n%10;
+		if(d==2 or 3 or 5 or 7)
+		  c=c+1;
+		n=n/10;
+	}
+	return c;
+}
+
+10 11 12
+13 14 15
+16 17 18
+	 0
+10 ----> 0+0 = 0
+11 ----> 0+0 = 0
+12 ----> 0+1 = 1
+13 ----> 1+1 = 2
+14 ----> 2+0 = 2
+15 ----> 2+1 = 3
+16 ----> 3+0 = 3
+17 ----> 3+1 = 4
+18 ----> 4+0 = 4
+
+4
+
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+c=0
+for i in range(3):
+    for j in range(3):
+        for k in str(l[i][j]):
+            if k in "2357":
+                c=c+1
+print(c)
+
+LBP249	
+
+Reverse of each element in matrix
+
+Implement a program to reverse each element in the matrix.
+
+input ------> a 3x3 matrix
+con --------> no
+output -----> result matrix
+
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+for i in range(3):
+    for j in range(3):
+        print(str(l[i][j])[::-1],end=' ')
+    print()
+
+LBP250	
+
+Keep paliandrome number and replace remaining with 0's
+
+Implement a program to keep all paliandrome numbers as it is and replace remaining with 0.
+
+input ------> a 3x3 matrix
+con --------> no
+output -----> result matrix
+
+
+python implementation:
+----------------------
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=[int(i) for i in input().split()]
+l=[l1,l2,l3]
+for i in range(3):
+    for j in range(3):
+        s=str(l[i][j])
+        if s==s[::-1]:
+            print(l[i][j],end=' ')
+        else:
+            print('0',end=' ')
+    print()
+
+LBP251	
+
+multiples of 10
+
+Given an array A of N integer numbers. 
+The task is to rewrite the array by putting all multiples of 10 at the end of the given array.
+
+Note: The order of the numbers which are not multiples of 10 should remain unaltered, and similarly. the order of all multiples of 10 should be unaltered.
+
+input ------> N and Array Elements
+con --------> no
+output -----> updated array
+
+10 11 20 15 30 45 50 ===> 11 15 45 10 20 30 50
+
+if(a[i]%10!=0) print
+if(a[i]%10==0) print
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in L:
+    if i%10!=0:
+        print(i,end=' ')
+for i in L:
+    if i%10==0:
+        print(i,end=' ')
+
+LBP252	
+
+Employee's Rating Point
+
+In a company, an employee's rating point (ERP) is calculated as the sum of the rating points given by the employee's manager and HR. 
+The employee rating grade (ERG) is calculated according to the ERP ranges given below.
+
+ERP	ERG
+30-50	D
+51-60	C
+61-80	B
+81-100	A
+
+Write an algorithm to find the ERG character for a given employee's ERP.
+
+input -------> an integer value 
+con ---------> con
+output ------> employee rating grade
+
+
+python implementation:
+----------------------
+n=int(input())
+if n>=30 and n<=50:
+    print("D")
+elif n>=51 and n<=60:
+    print("C")
+elif n>=61 and n<=80:
+    print("B")
+else:
+    print("A")
+
+LBP253
+
+encrypted digits
+
+A company trasfers an encrypted code to one of its clients. 
+The code needed to be decrypted so that it can be used for accessing all the required information. 
+The code can be decrypted by interchanging each consecutive digit and once if the digit got interchanged then it cannot be used again. 
+If at a certain point there is no digits to be interchanged with, then that single digit must be left as it is.
+
+Write an algorithm to decrypt the code so that it can be used to access the required information.
+
+input ------> a number from the user
+con --------> no
+output -----> an integer value
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+if n%2==0:
+    i=0
+    while i<n:
+        print(L[i+1],L[i],end=' ')
+        i=i+2
+else:
+    i=0
+    while i<n-1:
+        print(L[i+1],L[i],end=' ')
+        i=i+2
+    print(L[n-1])
+
+LBP254
+
+Easy Shopping
+
+The e-commerce company 'Easy Shopping' displays some specific products for its premium customers on its user interface. 
+The company shortlisted a list of N products.
+The list contains the price of each product. 
+The company will select random products for display.
+The selection criteria states that only those products whose price is a perfect cube number will be selected for display. 
+The selection process is automated and is done by the company's system.
+The company wishes to know the total count of the products selected for display.
+
+Write an algorithm to find the count of products that will be displayed.
+
+input ----> an array size and elements
+con ------> no
+output ---> perfect cube elements
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+for i in L:
+    c=0
+    while c<=i:
+        if c*c*c==i:
+            print(i,end=' ')
+            break
+        c=c+1
+
+LBP255
+
+player's score
+
+In a game, organizers has given a number to the player. 
+The player has to find out the differnece between the number and the reverse of the number.
+The difference between two numbers is the player's score. 
+The number given to the player and the player's score can be a negative or positive number.
+
+Write an algorithm to find the player's score.
+
+input ------> an integer 
+con --------> no
+output -----> player's score
+
+n-rev(n)
+
+
+python implementation:
+----------------------
+n=input()
+print(int(n)-int(n[::-1]))
+
+LBP256
+
+GlobalAdd
+
+The media compnay "GlobalAdd" has received a batch of advertisements from different product brands. 
+The batch of advertisements is a numeric value where each digit represnets the number of advertisements the media company has received from different product brands. 
+Since the company banners permit only even numbers of advertisements to be displayed, 
+the media company needs to know the totoal number of advertisements it will be able to display from the given batch.
+
+Write an algorithm to calculate the total number of advertisements that will be displayed from the batch.
+
+input -----> an integer
+con -------> no
+output ----> count of advertisements
+
+
+python implementation:
+----------------------
+n=int(input())
+c=0
+while n!=0:
+    d=n%10
+    if d%2==0:
+        c=c+1
+    n=n//10
+print(c)
+
+
+LBP257
+
+FunGames
+
+The games development company "FunGames" has developed a ballon shooter games. 
+The ballons are arranged in a linear sequence and each ballon has a number associated with it.
+The numbers on the ballons are fibonacci series. 
+In the game the player shoots 'k' ballons. 
+The player's score is the sum of numbers on k ballons.
+
+Write an algorithm to generate the player's score.
+
+input ----> an integer vlaue n
+con ------> no
+output ---> sum value
+
+0 1 1 2 3 5 8 .....
+
+K=1 ----> 0
+K=3 ----> 0+1+1=2
+
+sum of fib seq
+
+
+python implementation:
+----------------------
+k=int(input())
+a1=-1
+a2=1
+sum=0
+for i in range(1,k+1):
+    a3=a1+a2
+    sum=sum+a3
+    a1,a2=a2,a3
+print(sum)
+
+LBP258
+
+The Past Book
+
+To create a profile on a scocial media account "ThePastBook". 
+The user needs to enter a string value in the form of user name. 
+The username should consist of only characters tagged a-z. 
+if  the user enters an incorrect string containing digits the system automcatically identifiers the number of digits in the string and removes them.
+
+Write an alogorithm to help the system identify the count of digits present in the username.
+
+input -----> A string from the user.
+con -------> no
+output ----> count of digits
+
+
+python implementation:
+----------------------
+s=input()
+c=0
+for i in s:
+    if i.isdigit():
+        c=c+1
+print(c)
+
+LBP259
+
+Morning Prayer
+
+Student of a school are assembled in a straight line for the morning prayer. 
+To uplift the sprit of the students, an exercise is conducted. 
+THe initial letter of all the student's names is noted down(str). 
+The task here is to substitute the intitial letters in the list with consonants 
+such that if the initial letter of the student is a vowel, retain the student in the same position.
+
+If the initial letter of the student is a vowel, swap with the next immediate consonants from the english alphabet sequence (a-z). 
+Say, initial letter of a student starts with b swap with c, next immediate consonant. 
+If the initial letter is 'z' swap with 'b'.
+
+input -----> a string from the user
+con -------> no
+output ----> updated string
+
+welcome -----> xemdone
+
+
+python implementation:
+----------------------
+s=input()
+for i in s:
+    if i in 'aeiou':
+        print(i,end='')
+    else:
+        ch = i
+        if ch=='z':
+            ch='a'
+        ch=chr(ord(ch)+1)
+        if ch in 'aeiou':
+            print(chr(ord(ch)+1),end='')
+        else:
+            print(ch,end='')
+
+LBP260
+
+factorial game
+
+Mikes likes to play with numbers. 
+His friends are also good with numbers and often plays mathematical games.
+they made a small game where they will spell the last digit of a factorial of a number other than 0.
+
+Let say the given number is 5, so 5! will be 120, Here 0 is the last digit. 
+But we dn't want 0, we want a number other than 0. Then last digit is 2.
+
+input ----> an integer value
+con ------> no
+output ---> an integer vlaue
+
+0!=1 -----> 1
+1!=1 -----> 1
+2!=2 -----> 2
+3!=6 -----> 6
+4!=24 ----> 4
+5!=120 ---> 2
+
+
+python implementation:
+----------------------
+import math
+n=int(input())
+f=math.factorial(n)
+if f%10==0:
+    print((f//10)%10)
+else:
+    print(f%10)
+
+LBP261
+
+Speed Maths
+
+Jack was in 9th standard. He appeared for a speed maths competivie exam. 
+Jack is taking longer time to solve one of the problems. 
+Count the number of 1's in the binary representation of an integer. 
+Help him to solve the below problem and write a code for the same.
+
+input ------> an integer value
+con --------> no
+output -----> an int value
+
+
+python implementation:
+----------------------
+n=int(input())
+s=bin(n)
+print(s.count('1'))
+
+
+LBP262
+
+puzzle
+
+Dennis was solving a puzle. 
+the puzzle was to verify a number whose cube ends with the number itself. 
+Help Dennis to find the solution of the puzzle and write the code accordingly.
+
+input --------> integer value to verified
+con ----------> no
+output -------> boolean value True or False
+
+
+python implementation:
+----------------------
+n=int(input())
+print('true' if n**3%10==n else 'false')
+
+
+LBP263
+
+mathematics class
+
+In a mathematics class, number system is being taught to students, before teaching them 10's and 100's place, they will be taught the number positions. 
+The positions will be starting from sequence number 1 and the direction will be from left to right.
+
+So if i want to find second position of a digit in the number 90876, it will be 0.
+if the kth digit exceeds the number position return -1.
+
+write a program to find the kth digit in a given number.
+
+input -----> integer value and kth digit
+con -------> no
+output ----> an integer number
+
+
+python implementation:
+----------------------
+s=input()
+n=int(input())
+print(s[n-1] if n<len(s) else '-1')
+
+
+(i<s.length())?s.charAt(i-1):"-1"
+
+abc, 1 ---> a
+abc, 2 ---> b
+abc, 3 ---> c
+abc, 4 ---> -1
+
+LBP264
+
+power function
+
+In a mathematics class, the students are beign taught power function. 
+So "a" raised to the power of "b" is shown as a^b and the calculatation goes as a*a*a...b times. 
+Now there is slight twist to the problem, 
+the students have to find out the last digit of the resultant a^b. 
+
+input -----> an integer value as base and power
+con -------> no
+output ----> last digit of a^b
+
+4,2 ---> 16 ---> 6
+2,10 --> 1024 -> 4
+
+
+python implementation:
+----------------------
+a,b=(int(i) for i in input().split())
+print((a**b)%10)
+
+LBP265
+
+mathematical tricks
+
+Aryan is studying in the 5th standard. 
+He is very interested in mathematical tricks and always wanted to play with numbers. 
+Aryan would like to replace existing numbers with some other numbers. 
+Today he decided to replace all digits of the number 
+(which is greater than or equal to 2 digits) by its squares and print it in reverse order. 
+Write a program to help him to replace numbers accordingly.
+
+input -----> a number
+con -------> no
+output ----> replaced all digits by its squares and revered number
+
+
+python implementation:
+----------------------
+n=int(input())
+while n!=0:
+    d=n%10
+    print(d*d,end='')
+    n=n//10
+
+LBP266
+
+coding standards
+
+Tom has joined a new company and he is assigned a program to code. 
+But before starting to code, he needs to know the coding standards. 
+He need to make sure that the variable name should meet the below standards, 
+
+=> contains only english letter
+=> and/or digits
+=> and/or underscore (_)
+=> should not start with digits
+
+The program should return True/False based on the above conditions
+
+input ----> a string from the user
+con ------> no
+output ---> true or false
+
+
+python implementation:
+---------------------
+import re
+s=input()
+print('true' if re.fullmatch("[a-zA-Z_][a-zA-Z0-9_]+",s) else 'false')
+
+
+[a-zA-Z_][a-zA-Z0-9_][a-zA-Z0-9_]+
+
+abc
+a
+
+
+LBP267
+
+party quiz
+
+While sitting in party, Tom came up with an idea of a quiz. 
+and the quiz is, Tom will spell out a number, and a person has to tell a number which is next to it. But this number has to be perfect square.
+
+input -----> a number from the user
+con -------> no
+output ----> the perfect square after N
+
+n=7 ---> 8, 9, 10, 11, 12, ..... ----> 9
+
+
+
+python implementation:
+----------------------
+n=int(input())
+i=1
+while True:
+    if i*i>=n:
+        print(i*i)
+        break
+    i=i+1
+    
+LBP268
+
+Be Positive 
+
+Write a program to get two inputs from the user and find the absolute difference between the sum of two numbers and the product of two numbers.
+
+input ------> two numbers from the user
+con --------> no
+output -----> absolute difference 
+
+a and b
+
+abs((a+b)-(a*b))
+
+
+python implementation:
+----------------------
+a=int(input())
+b=int(input())
+print(abs((a+b)-(a*b)))
+
+
+LBP269
+
+Prime Number Busses
+
+James wants to travel by bus to reach his friend John's home. 
+John gave a hint that all busses from Jame's location will reach his home 
+if the bus number is prime number.
+Write a program to help James find the bus that reaches John's home.
+
+input -----> a number from the user
+con -------> no
+output ----> yes or no
+
+
+python implementation:
+----------------------
+n=int(input())
+f=0
+for i in range(1,n+1):
+    if n%i==0:
+        f=f+1
+print('yes' if f==2 else 'no')
+
+LBP270
+
+sentence making
+
+The teacher in a school has started to teach the very basics rule for a sentence is that it should start with a capital letter and ends with a full stop. 
+If the sentence fails any of the above mentioned criteria, it will be an incorrect sentence.
+Make a program to validate whether a given statement is a correct sentence or not. 
+The program should return True/False based on the validity.
+
+input -----> a string from the user
+con -------> no
+output ----> true or false
+
+
+python implementation:
+----------------------
+import re
+s=input()
+print('true' if re.fullmatch("[A-Z][a-zA-Z_0-9 ]*[.]",s) else 'false')
+
+
+LBP271 
+
+Single Binary Value
+
+Geetha Singh is trying to create a system to convert binary number to its decimal eqivalent. Help her to automate the process.
+
+input -----> a binary value
+con--------> no
+output ----> decimal value
+          8421
+n=110 --->4+2=6
+
+0x2^0 + 1x2^1 + 1x2^2
+0     + 2     + 4 =6
+
+
+python implementation:
+----------------------
+print(eval("0b"+input()))
+
+LBP272
+
+Item id
+
+A company wishes to bucketize their item id's for better search operations. 
+The bucket for the item ID is chosen on the basis of the maximum value of 
+the digit in the item ID. 
+Write an algorithm to find the bucket to which the item ID will be assigned.
+
+input -----> ItemId
+con -------> no
+output ----> bucket ID
+
+
+12875 ---> 8
+
+
+python implementation:
+----------------------
+print(max([int(i) for i in input()]))
+
+
+
+LBP273
+
+Next Letter
+
+Implement the following function
+
+def NextLetter(ch1,ch2);
+
+The function accepts two characters ch1 and ch2 as arguments, ch1 and ch2 are alphabetical letters. 
+Implement the function to find and return the next letter so that distance between ch2 and the next letter is the same as the distance between ch1 and ch2. 
+While counting distance if you exceed the letter 'z' then, count the remaining distance starting from the letter 'a'.
+
+Distance between two letters is the number of letters between them.
+
+input ------> char ch1 and char ch2
+con --------> no
+output -----> char ch
+
+
+ch2+(ch2-ch1)
+
+
+python implementation:
+----------------------
+ch1,ch2=(i for i in input().split())
+d=ord(ch2)-ord(ch1)
+if ch2=='z':
+    print(chr(ord('a')+d))
+else:
+    print(chr(ord(ch2)+d))
+
+
+LBP274
+
+Sum of All Integers
+
+Implement a program to find sum of all integers between two integer numbers taken as input and are divisible by 7.
+
+
+input ------> an integer value
+con --------> no
+output -----> sum value
+
+sum of numbers which are divisible by 7
+
+
+python implementation:
+----------------------
+n1,n2=(int(i) for i in input().split())
+sum=0
+for i in range(n1,n2+1):
+    if i%7==0:
+        sum=sum+i
+print(sum)
+
+LBP275
+
+Country Visa Center
+
+The country visa center generates the token number for its applicants from their application ID. 
+the application ID is numberic value. 
+The token number is generated  in a specific form. 
+the even digits in the applicant's ID are replaced by the digit one greater than the even digit 
+and the odd digits in the applicant's ID are replaced by the digit one lesser than the odd digit. 
+The numeric value thus generated represents the token number of applicant.
+
+Write an algorithm togenerate the token number from the applicant ID.
+
+input -----> application ID
+con -------> no
+output ----> token id
+
+12345 ---> 03254
+
+add 1 to even digits
+sub 1 from odd digits
+
+
+python implementation:
+----------------------
+n=input()
+n=int(n[::-1])
+while n!=0:
+    d=n%10
+    if d%2==0:
+        print(d+1,end='')
+    else:
+        print(d-1,end='')
+    n=n//10
+
+LBP276
+
+Neon Number
+
+Rahul's teacher gave an assignment to all the student that when they show up tomorrow they should find a special type of number and report her. 
+He thought very carefully and came up with an idea to have neon numbers. 
+A neon number is a number where the square of the sum of each digit of the number results in the given number.
+Given an integer  N, 
+Write a program to find whether the number N is a Neon number. 
+If it's not a Neon number, print the sqaure of the sum of digits of the number.
+
+input -------> a number
+con ---------> no
+output ------> true or false
+
+
+python implementation:
+----------------------
+n=int(input())
+a=n%10
+b=(n//10)%10
+print("true" if (a+b)**2==n else "false")
+
+LBP277
+
+super market pricing
+
+A super market maintains a pricing format for all its products. A value N is printed on each product. When the scanner reads the value N on the item, the product of all the digits in the value N is the price of the item. the task here is to design the software such that given the code of any item N the product (multiplication) of all the digits of value should be computed (price).
+
+input ----> an integer value
+con ------> no
+output ---> price
+
+
+123=1*2*3=6/-
+
+
+python implementation:
+----------------------
+import math
+L=[int(i) for i in input()]
+print(math.prod(L))
+
+LBP278
+
+Number Container
+
+Given two positive numbers N and K. The task is to find the number N containers exactly K digit or not. If contains then print True<space>digit_count otherwise False<space>digit_count.
+
+input ----> Value of N and K
+con ------> con
+output ---> True|False<space>Digit_Count
+
+123 4 ----> False 3
+124 3 ----> True 3
+
+
+python implementation:
+----------------------
+n1,n2=(i for i in input().split())
+n2=int(n2)
+if len(n1)==n2:
+    print("True",len(n1))
+else:
+    print("False",len(n1))
+
+LBP279
+
+pronic number
+
+A pronic number is a number which is a product of two consecutive integers, that is, 
+a number of the form n(n + 1). 
+Create a function that determines whether a number is pronic or not.
+
+
+input------> a number from the user
+con -------> no
+output ----> true or false
+
+
+python implementation:
+----------------------
+import math
+n=int(input())
+x=math.isqrt(n)
+print("true" if n==x*(x+1) else "false")
+
+LBP280
+
+Validate ATM PIN
+
+Implement a program that will test if a string is a valid PIN or not via a regular expression.
+
+A valid PIN has:
+
+Exactly 4 characters.
+Only numeric characters (0-9).
+No whitespace.
+
+input ----> an input from the user
+con ------> con
+output ---> true or false
+
+
+python implementation:
+----------------------
+import re
+s=input()
+print('true' if re.fullmatch("[0-9]{4}",s)!=None else 'false')
+
+LBP281
+
+The Actual Memory Size of Your USB Flash Drive
+
+Implement a program that takes the memory size as an argument and returns the actual memory size.
+
+Note: The actual storage loss on a USB device is 7% of the overall memory size!
+
+input -----> memory size in GB
+con -------> no
+output ----> actual memory size, round your result to two decimal places.
+
+
+1GB ----> 0.93GB
+
+n-n*7.0/100 ---> actual size
+
+
+python implementation:
+----------------------
+n=int(input())
+print("%.2f"%(n-n*0.07))
+
+LBP282
+
+Happy Number
+
+The happy number can be defined as a number which will yield 1 when it is replaced by the sum of the square of its digits repeatedly.  
+If this process results in an endless cycle of numbers containing 4, then the number is called an unhappy number.
+
+Write a program that accepts a number and determines whether the number is a happy number or not. Return true if so, false otherwise.
+
+input -----> a number from the user
+con -------> no
+output ----> true or false
+
+32=9+4=13=1+9=10=1+0=1	true
+16=1+36=37=9+49=58=25+64=89=........=4 false
+
+
+python implementation:
+----------------------
+def sum(n):
+    s=0
+    while n!=0:
+        d=n%10
+        s=s+d*d
+        n=n//10
+    return s
+n=int(input())
+while True:
+    if n==1:
+        print('true')
+        break
+    if n==4:
+        print('false')
+        break
+    n=sum(n)
+
+LBP283
+
+Calculate the Mean
+
+Implement a function that takes an array of numbers and returns the mean (average) of all those numbers.
+
+input ----> an array size and elements
+con ------> no
+output ---> print mean value and round to two decimal places.
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+sum=0
+for i in L:
+    sum=sum+i
+print("%.2f"%(sum/n))
+
+LBP284
+
+Factorize a Number
+
+Implement a program to that takes a number as its argument and returns an array of all its factors
+
+input -----> a number
+con -------> no
+output ----> list of factors
+
+for(i=1;i<=n;i++)
+{
+	if(n%i==0)
+		print i
+}
+
+
+python implementation:
+----------------------
+n=int(input())
+for i in range(1,n+1):
+    if n%i==0:
+        print(i,end=' ')
+
+LBP285
+
+Next 5 characters
+
+Implement a program to display next 5 characters after input character.
+
+input -----> a character from the user
+con -------> no
+output ----> next 5 characters exluding input
+
+a ---> b c d e f
+
+
+python implementation:
+----------------------
+n=input()
+for i in range(1,6):
+    print(chr(ord(n)+i),end=' ')
+
+LBP286
+
+Composite Number
+
+Implement a program to check whether the given number is composite number or not.
+
+input ----> a number from the user
+con ------> no
+output ---> true or false
+
+prime f==2
+composite f>2
+
+
+python implementation:
+----------------------
+n=int(input())
+f=0
+for i in range(1,n+1):
+    if n%i==0:
+        f=f+1
+print('true' if f>2 else 'false')
+
+LBP287
+
+Hot and Cold Numbers
+
+Immplement a program, it reads integers from the input device(until it gets -ve number) and put them into array.
+We define a hot number as any number whose last digit is 2, and 
+cold number as any number that is less than 50. You have to modify the program such that
+
+if it is hot number replace by -1
+if it is cold number replace by -5
+if it is both hot and cold replace by -6
+else keep old number
+
+input -----> a sequence of int values
+con -------> no
+output ----> a sequence of int values
+
+hot num last digit is 2
+col num <50
+
+92 61 13 42 -1
+-1 61 -5 -6
+
+
+python implementation:
+----------------------
+L=[int(i) for i in input().split()]
+for n in L[0:len(L)-1]:
+    if n%10==2 and n>50:
+        print(-1,end=' ')
+    elif n%10!=2 and n<50:
+        print(-5,end=' ')
+    elif n%10==2 and n<50:
+        print(-6,end=' ')
+    else:
+        print(n,end=' ')
+
+LBP288
+
+Not Having Alphabet 'a'
+
+Write a program to check whether a string not having alphabet 'a'?
+
+input --------> string from the user
+con ----------> con
+output -------> true or false
+
+
+python implementation:
+----------------------
+print('true' if 'a' in input() else 'false')
+
+LBP289
+
+MathAtTip
+
+The online math course provider 'MathAtTip' has designed a course for children called Learning Number Recognition and Coutning. 
+The assessment part of the course has a question where the student is given a number and a digit. 
+The student needs to find out the total count of the digits present in the number excluding the given digit.
+
+input ------> two space seperated int values
+con --------> no
+output -----> count of total digits excluding k
+
+12345, 2 ---> 4
+12345, 6 ---> 5
+
+
+python implementation:
+----------------------
+s=input()
+d=input()
+print(len(s)-s.count(d))
+
+
+LBP290
+
+TodaysApparel
+
+The e-commerce company "TodaysApparel" has a list of sales values of N days. 
+Some days the company made a profit, represented as a positive value.
+Other days the company incurred a loss, represented as a negative sales value.
+The company wishes to know the number of profitable days in the list.
+
+Write an algorithm to help the company know the number of profitable days in the list.
+
+input -------> array size and elements
+con ---------> no
+output ------> count number of +ve values
+
+
+count of +ve elements in the arrays
+
+
+python implementation:
+---------------------
+n=int(input())
+l=[int(i) for i in input().split()]
+c=0
+for i in l:
+    if i>0:
+        c=c+1
+print(c)
+
+LBP291
+
+BucketId
+
+A data company wishes to store its data files on the server. They N files. 
+Each file has a particular size. 
+the server stires the files in bucket list. 
+The bucket ID is calculated as the sum of the digits of its file size. 
+The server.. the bucket ID for every file request where the file is stored.
+
+Write an algorithm to find the bucketIDs where the files are stored.
+
+input -----> an array size and elements
+con -------> no
+output ----> bucketIds
+
+
+python implementation:
+----------------------
+def sum(n):
+    s=0
+    while n!=0:
+        d=n%10
+        s=s+d
+        n=n//10
+    return s
+n=int(input())
+l=[int(i) for i in input().split()]
+for i in l:
+    print(sum(i),end=' ')
+
+LBP292
+
+Decimal to Octal
+
+Implement a program to convert the given decimal value into octal
+
+input ------> decimal value
+con --------> no
+output -----> octal number
+
+a[]={};
+while(n!=0)
+{
+	a[i]=n%8;
+	n=n/8;
+}
+i=i-1 to i>=0 i--
+
+n=10
+
+
+python implementation:
+----------------------
+n=int(input())
+print(oct(n)[2:])
+
+LBP293
+
+sum of adjacent elements
+
+Implement a program to find sum of adjacent elements in the array
+
+input ----> an array size and elements
+con ------> no
+output ---> array with sum of adjacent elements
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+s=0
+for i in L:
+    s=s+i
+    print(s,end=' ')
+
+LBP294
+
+Vaccination Drive List Preparator
+
+Currently government is taking lot of measures to control the spread of Coronavirus. 
+As we have caccine now, many campaigns are done to vaccination.
+
+Health dept is identifying the people in each area and recommended/vaccination of them. They are planning three stages
+
+stage1: above 60 years
+stage2: between 18 and 60
+stage3: below 18 years
+
+Implement a program to read date of birth of the person and decide he belong to which stage.
+
+input -----> date of birth 
+con -------> no
+output ----> 1 or 2 or 3
+
+
+python implementation:
+----------------------
+l=input().split("/")
+age=2022-int(l[2])
+if age>60:
+    print(1)
+elif age>=18 and age<=60:
+    print(2)
+else:
+    print(3)
+
+
+LBP295
+
+Area of the circle
+
+Implement a program to find the area of the circle
+
+input -----> radius value
+con -------> no
+output ----> area of the circle (round to two decimals)
+
+
+python implementation:
+---------------------
+import math
+n=int(input())
+print("%.2f"%(math.pi*n**2))
+
+LBP296
+
+Divisible by 5 or 7
+
+Implement a program to print the list of integers which are divisible by 5 or 7.
+
+input ----> a number from the user
+con ------> no
+output ---> seq of int values which are divisible by 5 or 7
+
+
+python implementation:
+----------------------
+n=int(input())
+for i in range(1,n+1):
+    if i%5==0 or i%7==0:
+        print(i,end=' ')
+
+LBP297
+
+ending 3
+
+Implement a program to print the list of integers which are ending with 3 in the given range.
+
+input -----> n1 and n2 values
+con -------> no
+output ----> list of int values
+
+
+python implementation:
+----------------------
+n1,n2=(int(i) for i in input().split())
+for i in range(n1,n2+1):
+    if i%10==3:
+        print(i,end=' ')
+
+LBP298
+
+Min and Max
+
+Implement a program to find absolute diff between sum of max digits 
+and sum of min digits present in three integers n1,n2 and n3
+
+input -----> n1,n2 and n3
+con -------> no
+output ----> int value
+
+m+m+m=s1
+m+m+m=s2
+abs(s1-s2)
+
+
+python implementation:
+----------------------
+n1=input()
+n2=input()
+n3=input()
+s1=max([int(i) for i in n1])+max([int(i) for i in n2])+max([int(i) for i in n3])
+s2=min([int(i) for i in n1])+min([int(i) for i in n2])+min([int(i) for i in n3])
+print(abs(s1-s2))
+
+
+LBP299
+
+Lucky String
+
+Write a program to find whether the given string is lucky or not, 
+A string is said to be lucky if the sum of ascii values of the characters in the string is even.
+
+input ------> a string
+con --------> non empty string
+output -----> true or false
+
+
+python implementation:
+----------------------
+s=input()
+sum=0
+for i in s:
+    sum=sum+ord(i)
+print('true' if sum%2==0 else 'false')
+
+LBP300
+
+Last three digits
+
+Implement a program to find sum of last three digits in the given number.
+
+input ------> an int value
+con --------> must be three digit number
+output -----> int value
+
+
+python implementation:
+----------------------
+n=input()
+print(int(n[-1])+int(n[-2])+int(n[-3]))
+
+LBP301: Reverse and Replace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Given String/Sentence need to be reversed and the vowels need to be replaced with numbers from 1-9 in the reversed string replaced number should be appears in descending order from left to right. 
+If there are more than 9 vowels, numbering should restart from 1.
+
+input ---------> a string from the user
+constraint-----> non-empty string
+output --------> updated string
+
+
+python implementation:
+----------------------
+s=input()
+c=1
+for i in s:
+    if i in "aeiou":
+        print(c,end='')
+        c=c+1
+        if(c==10):
+            c=1
+    else:
+        print(i,end='')
+
+LBP302: Party on cruise
+~~~~~~~~~~~~~~~~~~~~~~~
+A party has been organized on cruise. The party is organized for a limited time (T). The number of guests entering E[i] and leaving L[i] the party at every hour is represented as elements of the array. The task is to find the total number of guests present on the cruise at the end.
+
+input -------> size of two arrays and elements of E and L array
+constraint --> no
+output ------> number of guests present at the end of party.
+
+
+python implementation:
+----------------------
+n=int(input())
+L1=[int(i) for i in input().split()]
+L2=[int(i) for i in input().split()]
+print(sum(L1)-sum(L2))
+
+LBP303: Airport Security
+~~~~~~~~~~~~~~~~~~~~~~~~
+Airport Security officials have confiscated several items of the passenger at the security checkpoint. All the items have been dumped into a huge box (array). Each item possessed a certain amount of risk (0, 1, 2). Here is the risk severity of the item representing an array [] of N number of integer values. The risk here is to sort the item based on their level of risk values range from 0 to 2.
+
+input --------> array size and elements
+contraint ----> non-empty array
+output -------> sorted items based on risk
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+L.sort()
+for i in L:
+    print(i,end=' ')
+
+
+LBP304: Chocolate factory
+~~~~~~~~~~~~~~~~~~~~~~~~~
+A chocolate factory is packing chocolates into the packets. The chocolate packets here represent an array of n number of integer values. The task is to find the empty packets (0) of chocolate and push it to the end of the conveyor belt (array).
+
+input -------> array size and elements
+constraint---> non-empty array
+output ------> updated array
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[int(i) for i in input().split()]
+c=0
+for i in L:
+    if i!=0:
+        print(i,end=' ')
+    else:
+        c=c+1
+for i in range(c):
+    print('0',end=' ')
+
+LBP305: Digital Logic
+~~~~~~~~~~~~~~~~~~~~~
+Joseph is learning digital logic subject which will be for his next semester. He usually tries to solve unit assignment problems before the lecture. Today he got one tricky question. The problem statement is "A positive integer has been given as an input. Convert decimal value to binary representation. Toggle all bits of it after the most significant bit including the most significant bit. Print the positive integer value after toggle all bits.
+
+input --------> an integer value
+constraint ---> n>0
+output -------> +ve decimal integer value
+
+
+python implementation:
+----------------------
+n=int(input())
+L=[0,0,0,0]
+i=0
+while n!=0:
+    d=n%2
+    L[i]=d
+    i=i+1
+    n=n//2
+for i in range(4):
+    if L[i]==0:
+        L[i]=1
+    else:
+        L[i]=0
+print(L[0]*1+L[1]*2+L[2]*4+L[3]*8)
+
+LBP306: Security Key
+~~~~~~~~~~~~~~~~~~~~
+A company is transmitting data to another server. 
+The data is in the form of numbers. 
+To secure the data during transmission, 
+they plan to obtain a security key that will be sent along with the data. 
+The security key is identified as the count of the repeating digits in the data. 
+Write a algorithm to find the security key for the data.
+
+input --------> integer data to be transmitted
+constraint ---> no
+output -------> security key or -1
+
+logic:
+------
+a[10]={0}
+
+if a[i]>=2 then c++
+
+
+python implementation:
+----------------------
+d={}
+L=[int(i) for i in input()]
+for i in L:
+    d[i]=d.get(i,0)+1
+c=0    
+for i in d.values():
+    if i>=2:
+        c=c+1
+print(c if c!=0 else -1)
+
+LBP307:	Data Encode
+~~~~~~~~~~~~~~~~~~~
+A company wishes to encode its data. The data is in the form of a number. They wish to encode the data with respect to a specific digit. They wish to count the number of times the specific digit reoccurs in the given data so that they can encode the data accordingly. Write an algorithm to find the count of the specific digit in the given data.
+
+input ---------> data and digit
+constraint-----> no
+output --------> count of specific digit
+
+
+python implementation:
+----------------------
+s,key=(i for i in input().split())
+print(s.count(key))
+
+LBP308: One Time Password
+~~~~~~~~~~~~~~~~~~~~~~~~~
+An e-commerce site wishes to enhance its ordering process. They plan to implement a new scheme of OTP generation for order confirmations. The OTP can be any number of digits. For OTP generation, the user will be asked for two random numbers where first number is always smaller than second number. The OTP is calculated as the sum of the maximum and minimum prime values in the range of the user-entered numbers. Write a program to generate OTP.
+
+input ---------> two integer values 
+constraint ----> first number < second number
+output --------> sum of max and min prime numbers
+
+
+n1 and n2
+min prime number n1 ----->
+max prime number n2 <----
+
+1 10
+2,3,5,7
+min=2
+max=7
+otp = 9
+
+
+python implementation:
+----------------------
+def isprime(n):
+    f=0
+    for i in range(1,n+1):
+        if n%i==0:
+            f=f+1
+    return f==2
+
+n1,n2=(int(i) for i in input().split())
+while True:
+    if isprime(n1):
+        s1=n1
+        break
+    n1=n1+1
+while True:
+    if isprime(n2):
+        s2=n2
+        break
+    n2=n2-1
+print(s1+s2)
+
+
+LBP309: Nearest paliandrome
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Write a program to find nearest greater paliandrome 
+
+input ---------> an integer value
+constraint ----> n>0
+output --------> print nearest paliandrome value
+
+
+python implementation:
+----------------------
+n=int(input())
+while True:
+    if str(n)==str(n)[::-1]:
+        print(n)
+        break
+    n=n+1
+
+LBP310: FizzBuzz
+~~~~~~~~~~~~~~~~~
+Given a number n, for each integer i in the range from 1 to n inclusive, print one value per line as follows.
+
+=> if i is a multiple of both 3 and 5 print FizzBuzz
+=> if i is a multiple of 3 (but not 5), print Fizz
+=> if i is a multiple of 5 (but not 3), print Buzz
+=> if i is not a multiple of 3 or 5 print the value of i.
+
+implement a program to read number n print the output as described above.
+
+input ------> a number n
+con --------> no
+output -----> print n string as per the above rules.
+
+
+python implementation:
+----------------------
+n=int(input())
+if n%3==0 and n%5==0:
+    print('FizzBuzz')
+elif n%3==0 and n%5!=0:
+    print('Fizz')
+elif n%3!=0 and n%5==0:
+    print('Buzz')
+else:
+    print(n)
+
